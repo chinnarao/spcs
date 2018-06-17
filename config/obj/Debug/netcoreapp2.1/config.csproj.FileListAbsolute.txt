@@ -17,7 +17,6 @@ C:\Users\chinn\OneDrive\Documents\GitHub\spcs\config\bin\Debug\netcoreapp2.1\con
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\config\bin\Debug\netcoreapp2.1\config.runtimeconfig.dev.json
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\config\bin\Debug\netcoreapp2.1\config.dll
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\config\bin\Debug\netcoreapp2.1\config.pdb
-C:\Users\chinn\OneDrive\Documents\GitHub\spcs\config\obj\Debug\netcoreapp2.1\config.csprojAssemblyReference.cache
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\config\obj\Debug\netcoreapp2.1\config.csproj.CoreCompileInputs.cache
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\config\obj\Debug\netcoreapp2.1\config.RazorAssemblyInfo.cache
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\config\obj\Debug\netcoreapp2.1\config.RazorAssemblyInfo.cs
