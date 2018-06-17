@@ -10,7 +10,6 @@ c:\Users\chinn\source\repos\spcs\common\obj\Debug\netcoreapp2.1\common.csprojAss
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\common\bin\Debug\netcoreapp2.1\common.deps.json
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\common\bin\Debug\netcoreapp2.1\common.dll
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\common\bin\Debug\netcoreapp2.1\common.pdb
-C:\Users\chinn\OneDrive\Documents\GitHub\spcs\common\obj\Debug\netcoreapp2.1\common.csprojAssemblyReference.cache
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\common\obj\Debug\netcoreapp2.1\common.csproj.CoreCompileInputs.cache
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\common\obj\Debug\netcoreapp2.1\common.AssemblyInfoInputs.cache
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\common\obj\Debug\netcoreapp2.1\common.AssemblyInfo.cs
