@@ -1,0 +1,41 @@
+﻿worked success connection string : 
+"Server=DESKTOP-HHRULCT\\MSSQLSERVER2016;Database=testxyz123;Trusted_Connection=True;MultipleActiveResultSets=true"
+-------------------------------------------------------------------------------------------------------------------- 
+tips for data annotations :
+[DatabaseGeneratedAttribute(DatabaseGeneratedOption.Identity)]
+modelBuilder.Entity<testXYz>().Property(x => x.PlaceLatitude).ForSqlServerHasColumnType("decimal(9,6)");
+-------------------------------------------------------------------------------------------------------------------- 
+Microsoft.EntityFrameworkCore.Tools nuget package is required to run the below commands
+
+PM> Add-Migration -Name "Initial" -Context "SPDbContext" -Project "SP.DAL" -StartupProject "SP.DAL"
+PM> Update-Database -Context "SPDbContext" -Project "SP.DAL" -StartupProject "SP.DAL"
+PM> Remove-Migration -Context "SPDbContext" -Project "SP.DAL" -StartupProject "SP.DAL"
+PM> Remove-Migration -Force -Context "SPDbContext" -Project "SP.DAL" -StartupProject "SP.DAL"
+
+====================================================================================================================
+
+====================================================================================================================
+
+worked success connection string : 
+"Server=DESKTOP-HHRULCT\\MSSQLSERVER2016;Database=World;Trusted_Connection=True;MultipleActiveResultSets=true"
+-------------------------------------------------------------------------------------------------------------------- 
+tips for data annotations :
+[DatabaseGeneratedAttribute(DatabaseGeneratedOption.Identity)]
+modelBuilder.Entity<testXYz>().Property(x => x.PlaceLatitude).ForSqlServerHasColumnType("decimal(9,6)");
+-------------------------------------------------------------------------------------------------------------------- 
+
+PM> Add-Migration -Name "Initial" -Context "WorldDataContext" -Project "SP.World" -StartupProject "SP.World"
+
+PM> Update-Database -Context "WorldDataContext" -Project "SP.World" -StartupProject "SP.World"
+
+PM> Remove-Migration -Context "WorldDataContext" -Project "SP.World" -StartupProject "SP.World"
+PM> Remove-Migration -Force -Context "WorldDataContext" -Project "SP.World" -StartupProject "SP.World"
+
+
+https://github.com/xyting/
+
+USE [World]  GO  exec sp_spaceused
+
+			
+
+			

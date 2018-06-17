@@ -1,0 +1,176 @@
+2017-06-02T02:35:22.7752065-07:00  [INF] User profile is available. Using '"C:\Users\chinn\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2017-06-02T02:35:23.1165792-07:00 0HL59JAOJDGIO [INF] Request starting HTTP/1.1 DEBUG http://localhost:5000/  0 (ca22a1cb)
+2017-06-02T02:35:23.1165778-07:00 0HL59JAOJDGIP [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/things/all/ application/json 0 (ca22a1cb)
+2017-06-02T02:35:23.1674244-07:00 0HL59JAOJDGIP [INF] Policy execution successful. (0204925d)
+2017-06-02T02:35:23.1932427-07:00 0HL59JAOJDGIO [INF] Request finished in 158.9716ms 200  (791a596a)
+2017-06-02T02:35:23.4812899-07:00 0HL59JAOJDGIP [INF] Executing action method "SP.Api.Controller.ThingsController.GetAll (SP.Api)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-06-02T02:35:23.5157160-07:00 0HL59JAOJDGIP [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-06-02T02:35:23.6738767-07:00 0HL59JAOJDGIP [INF] Executed action "SP.Api.Controller.ThingsController.GetAll (SP.Api)" in 184.7499ms (afa2e885)
+2017-06-02T02:35:23.8225244-07:00 0HL59JAOJDGIP [INF] Request finished in 784.2624ms 200 application/json; charset=utf-8 (791a596a)
+2017-06-02T02:35:29.6091306-07:00 0HL59JAOJDGIQ [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Territories/Get/1   (ca22a1cb)
+2017-06-02T02:35:29.8144911-07:00 0HL59JAOJDGIQ [INF] Executing action method "SP.Api.Controllers.TerritoriesController.Get (SP.Api)" with arguments (["1", "", "", ""]) - ModelState is Valid (ba7f4ac2)
+2017-06-02T02:35:37.6226720-07:00 0HL59JAOJDGIQ [INF] Executed action "SP.Api.Controllers.TerritoriesController.Get (SP.Api)" in 7984.3957ms (afa2e885)
+2017-06-02T02:44:18.2325937-07:00  [INF] User profile is available. Using '"C:\Users\chinn\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2017-06-02T02:44:18.7026518-07:00 0HL59JFO6HR3R [INF] Request starting HTTP/1.1 DEBUG http://localhost:5000/  0 (ca22a1cb)
+2017-06-02T02:44:18.7026518-07:00 0HL59JFO6HR3Q [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/things/all/ application/json 0 (ca22a1cb)
+2017-06-02T02:44:18.7475713-07:00 0HL59JFO6HR3Q [INF] Policy execution successful. (0204925d)
+2017-06-02T02:44:18.7720700-07:00 0HL59JFO6HR3R [INF] Request finished in 141.6778ms 200  (791a596a)
+2017-06-02T02:44:19.0576880-07:00 0HL59JFO6HR3Q [INF] Executing action method "SP.Api.Controller.ThingsController.GetAll (SP.Api)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-06-02T02:44:19.0718162-07:00 0HL59JFO6HR3Q [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-06-02T02:44:19.2681579-07:00 0HL59JFO6HR3Q [INF] Executed action "SP.Api.Controller.ThingsController.GetAll (SP.Api)" in 219.6227ms (afa2e885)
+2017-06-02T02:44:19.4056771-07:00 0HL59JFO6HR3Q [INF] Request finished in 774.4236ms 200 application/json; charset=utf-8 (791a596a)
+2017-06-02T02:44:21.5412262-07:00 0HL59JFO6HR3S [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Territories/Get/1   (ca22a1cb)
+2017-06-02T02:44:21.7269430-07:00 0HL59JFO6HR3S [INF] Executing action method "SP.Api.Controllers.TerritoriesController.Get (SP.Api)" with arguments (["1", "", "", ""]) - ModelState is Valid (ba7f4ac2)
+2017-06-02T02:44:26.9159511-07:00 0HL59JFO6HR3S [INF] Executed action "SP.Api.Controllers.TerritoriesController.Get (SP.Api)" in 5360.1449ms (afa2e885)
+2017-06-02T02:44:28.6226079-07:00 0HL59JFO6HR3S [ERR] Connection id ""0HL59JFO6HR3P"", Request id ""0HL59JFO6HR3S"": An unhandled exception was thrown by the application. (560e7d32)
+System.Exception: this is chinna for serilog error testing....................................
+   at SP.Api.Controllers.TerritoriesController.Get(Int32 i, String cc, String code, String name) in C:\Users\chinn\Desktop\SP\SP.Api\Controllers\TerritoriesController.cs:line 37
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__16.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__21.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Core.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Core.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Core.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Core.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Core.Internal.ResourceInvoker.<InvokeAsync>d__11.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at SP.Api.Infrastructure.SerilogMiddleware.<Invoke>d__7.MoveNext() in C:\Users\chinn\Desktop\SP\SP.Api\Infrastructure\SerilogMiddleware.cs:line 44
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.<Invoke>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Session.SessionMiddleware.<Invoke>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at SP.Api.Startup.<>c__DisplayClass5_0.<<Configure>b__0>d.MoveNext() in C:\Users\chinn\Desktop\SP\SP.Api\Startup.cs:line 114
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.IISIntegration.IISMiddleware.<Invoke>d__8.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Hosting.Internal.RequestServicesContainerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Frame`1.<RequestProcessingAsync>d__2.MoveNext()
+2017-06-02T02:44:28.6496413-07:00 0HL59JFO6HR3S [INF] Request finished in 7107.2397ms 500  (791a596a)
+2017-06-02T02:52:49.2088489-07:00  [INF] User profile is available. Using '"C:\Users\chinn\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2017-06-02T02:52:49.5721380-07:00 0HL59JKGF32U0 [INF] Request starting HTTP/1.1 POST http://localhost:5000/api/things/all/ application/json 0 (ca22a1cb)
+2017-06-02T02:52:49.5721380-07:00 0HL59JKGF32TV [INF] Request starting HTTP/1.1 DEBUG http://localhost:5000/  0 (ca22a1cb)
+2017-06-02T02:52:49.6194767-07:00 0HL59JKGF32U0 [INF] Policy execution successful. (0204925d)
+2017-06-02T02:52:49.6443930-07:00 0HL59JKGF32TV [INF] Request finished in 112.4935ms 200  (791a596a)
+2017-06-02T02:52:49.9324074-07:00 0HL59JKGF32U0 [INF] Executing action method "SP.Api.Controller.ThingsController.GetAll (SP.Api)" with arguments (null) - ModelState is Valid (ba7f4ac2)
+2017-06-02T02:52:49.9467411-07:00 0HL59JKGF32U0 [INF] Executing ObjectResult, writing value "Microsoft.AspNetCore.Mvc.ControllerContext". (4e968210)
+2017-06-02T02:52:50.0990615-07:00 0HL59JKGF32U0 [INF] Executed action "SP.Api.Controller.ThingsController.GetAll (SP.Api)" in 179.6886ms (afa2e885)
+2017-06-02T02:53:10.6932586-07:00 0HL59JKGF32U1 [INF] Request starting HTTP/1.1 GET http://localhost:5000/api/Territories/Get/1   (ca22a1cb)
+2017-06-02T02:53:14.1670892-07:00 0HL59JKGF32U0 [INF] Request finished in 24677.0442ms 200 application/json; charset=utf-8 (791a596a)
+2017-06-02T02:53:14.3794283-07:00 0HL59JKGF32U1 [INF] Executing action method "SP.Api.Controllers.TerritoriesController.Get (SP.Api)" with arguments (["1", "", "", ""]) - ModelState is Valid (ba7f4ac2)
+2017-06-02T02:53:17.4643845-07:00 0HL59JKGF32U1 [INF] Executed action "SP.Api.Controllers.TerritoriesController.Get (SP.Api)" in 3264.9919ms (afa2e885)
+2017-06-02T02:53:24.1905066-07:00 0HL59JKGF32U1 [ERR] Connection id ""0HL59JKGF32TU"", Request id ""0HL59JKGF32U1"": An unhandled exception was thrown by the application. (560e7d32)
+System.Exception: this is chinna for serilog error testing....................................
+   at SP.Api.Controllers.TerritoriesController.Get(Int32 i, String cc, String code, String name) in C:\Users\chinn\Desktop\SP\SP.Api\Controllers\TerritoriesController.cs:line 37
+   at lambda_method(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Internal.ObjectMethodExecutor.Execute(Object target, Object[] parameters)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeActionMethodAsync>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeNextActionFilterAsync>d__16.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Rethrow(ActionExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__21.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Core.Internal.ResourceInvoker.<InvokeNextResourceFilter>d__18.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Mvc.Core.Internal.ResourceInvoker.Rethrow(ResourceExecutedContext context)
+   at Microsoft.AspNetCore.Mvc.Core.Internal.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Core.Internal.ResourceInvoker.<InvokeFilterPipelineAsync>d__13.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Core.Internal.ResourceInvoker.<InvokeAsync>d__11.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Builder.RouterMiddleware.<Invoke>d__4.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.<Invoke>d__6.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at SP.Api.Infrastructure.SerilogMiddleware.<Invoke>d__7.MoveNext() in C:\Users\chinn\Desktop\SP\SP.Api\Infrastructure\SerilogMiddleware.cs:line 44
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.<Invoke>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at Microsoft.AspNetCore.Session.SessionMiddleware.<Invoke>d__9.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Cors.Infrastructure.CorsMiddleware.<Invoke>d__7.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at SP.Api.Infrastructure.IApplicationBuilderExtensions.<>c.<<SP>b__0_0>d.MoveNext() in C:\Users\chinn\Desktop\SP\SP.Api\Infrastructure\IApplicationBuilderExtensions.cs:line 155
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at SP.Api.Startup.<>c__DisplayClass5_0.<<Configure>b__0>d.MoveNext() in C:\Users\chinn\Desktop\SP\SP.Api\Startup.cs:line 114
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.IISIntegration.IISMiddleware.<Invoke>d__8.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Hosting.Internal.RequestServicesContainerMiddleware.<Invoke>d__3.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.Frame`1.<RequestProcessingAsync>d__2.MoveNext()
+2017-06-02T02:53:24.2150884-07:00 0HL59JKGF32U1 [INF] Request finished in 13579.4227ms 500  (791a596a)

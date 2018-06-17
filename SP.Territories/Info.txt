@@ -1,0 +1,142 @@
+﻿https://github.com/Arch
+=============================
+https://github.com/wakawaka54/raven-csharp/tree/enchancement/netcore
+https://github.com/getsentry/raven-csharp/issues/125
+https://docs.sentry.io/clients/csharp/
+
+
+System.NotSupportedException: Specified method is not supported.
+   at Microsoft.AspNetCore.Server.Kestrel.Internal.Http.FrameRequestStream.Seek(Int64 offset, SeekOrigin origin)
+   at SharpRaven.Core.Data.DefaultHttpRequestBodyConverter.TryConvert(HttpContext httpContext, Object& converted)
+
+
+   ------------------------------------------------
+   https://mledoze.github.io/countries/
+
+
+   ------------------------------------------------------------------
+   you might write an Information log when a method ends normally, a Warning log when a method returns a 404 return code, and an Error log when you catch an unexpected exception.
+   https://docs.microsoft.com/en-us/aspnet/core/fundamentals/logging
+ASP.NET Core defines the following log levels, ordered here from least to highest severity.
+Trace = 0
+For information that is valuable only to a developer debugging an issue. These messages may contain sensitive application data and so should not be enabled in a production environment. Disabled by default. Example: Credentials: {"User":"someuser", "Password":"P@ssword"}
+Debug = 1
+For information that has short-term usefulness during development and debugging. Example: Entering method Configure with flag set to true.
+Information = 2
+For tracking the general flow of the application. These logs typically have some long-term value. Example: Request received for path /api/todo
+Warning = 3
+For abnormal or unexpected events in the application flow. These may include errors or other conditions that do not cause the application to stop, but which may need to be investigated. Handled exceptions are a common place to use the Warning log level. Example: FileNotFoundException for file quotes.txt.
+Error = 4
+For errors and exceptions that cannot be handled. These messages indicate a failure in the current activity or operation (such as the current HTTP request), not an application-wide failure. Example log message: Cannot insert record due to duplicate key violation.
+Critical = 5
+For failures that require immediate attention. Examples: data loss scenarios, out of disk space.
+optionally in constructor:  _logger = logger.CreateLogger("TodoApi.Controllers.TodoController");
+_logger.LogInformation(LoggingEvents.GET_ITEM, "Getting item {ID}", id);
+_logger.LogWarning(LoggingEvents.GET_ITEM_NOTFOUND, "GetById({ID}) NOT FOUND", id);
+
+
+=======================================================================================================
+amazon web servies , 
+Access Key ID:   AKIAI35CVIN256D64BYQ
+Secret Access Key:      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
+
+
+==========================================================================================================
+
+http://www.extensionmethod.net
+
+
+===============================================================================================================
+CREATE TABLE [dbo].[Cache]( [Id] [nvarchar](449) NOT NULL,[Value] [varbinary](max) NOT NULL,[ExpiresAtTime] [datetimeoffset](7) NOT NULL,
+    [SlidingExpirationInSeconds] [bigint] NULL,[AbsoluteExpiration] [datetimeoffset](7) NULL,
+ CONSTRAINT [pk_Id] PRIMARY KEY CLUSTERED 
+(
+    [Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+ 
+CREATE NONCLUSTERED INDEX [Index_ExpiresAtTime] ON [dbo].[Cache]
+(
+    [ExpiresAtTime] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, SORT_IN_TEMPDB = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+
+====================================================================================================================
+https://www.hangfire.io/
+====================================================================================================================
+The ConnectionString (and optionally, SchemaName and TableName) should typically be stored outside of source control (such as UserSecrets), as they may contain credentials.
+=============================================================================================================================================================================
+https://docs.microsoft.com/en-us/aspnet/core/performance/caching/response
+=============================================================================================================================================================================
+sql server cache
+https://github.com/aspnet/Announcements/issues/43
+=============================================================================================================================================================================
+
+=============================================================================================================================================================================
+https://andrewlock.net/adding-cache-control-headers-to-static-files-in-asp-net-core/
+https://docs.microsoft.com/en-us/aspnet/core/performance/caching/middleware
+https://ppolyzos.com/2017/02/05/response-caching-and-gzip-compression-in-asp-net-core-web-application/
+https://www.softfluent.com/blog/dev/Caching-static-resources-forever-with-ASP-NET-Core
+http://jakeydocs.readthedocs.io/en/latest/performance/caching/response.html
+https://www.exceptionnotfound.net/writing-custom-middleware-in-asp-net-core-1-0/
+https://hajekj.net/2017/03/20/cookie-size-and-cookie-authentication-in-asp-net-core/
+=============================================================================================================================================================================
+install spa templates globally
+dotnet cli>>>>  dotnet new --install Microsoft.AspNetCore.SpaTemplates::*
+yeoman>>>>>>>>  npm install -g yo generator-aspnetcore-spa
+==============================================================================================================
+dotnet cli:
+step 1: create a folder structure like c:\dev\aspnetcore-angular-cli or something else
+step 2: c:\dev\aspnetcore-angular-cli> dotnet new angular
+step 3: for dotnet packages restore purpose c:\dev\aspnetcore-angular-cli> dotnet restore
+step 4: for node dependencies purpose c:\dev\aspnetcore-angular-cli> npm install
+step 5: c:\dev\aspnetcore-angular-cli>dotnet run
+==============================================================================================================
+for yeoman:
+step 1: create a folder structure like c:\dev\aspnetcore-angular-yeoman or something else
+step 2: c:\dev\aspnetcore-angular-yeoman> yo aspnetcore-spa
+step 3: for dotnet packages restore purpose c:\dev\aspnetcore-angular-yeoman> dotnet restore
+step 4: for node dependencies purpose c:\dev\aspnetcore-angular-yeoman> npm install
+step 5: c:\dev\aspnetcore-angular-cli>dotnet run
+===============================================================================================================
+https://docs.microsoft.com/en-us/dotnet/articles/core/tools/
+
+create a sln file in the folder :  c:\dev\SP\dotnet new sln  --name SP   =>  SP.sln created successfully
+add project to sln file: 
+1. dotnet sln SP.sln add C:\dev\SP\SP.Api\SP.Api.csproj
+2. dotnet sln SP.sln add C:\dev\SP\Microsoft.EntityFrameworkCore.UnitOfWork\Microsoft.EntityFrameworkCore.UnitOfWork.csproj
+3. dotnet sln SP.sln add C:\dev\SP\SP.Common\SP.Common.csproj
+4. dotnet sln SP.sln add C:\dev\SP\SP.DAL\SP.DAL.csproj
+5. dotnet sln SP.sln add C:\dev\SP\SP.DL\SP.DL.csproj
+
+add project ref to sp.api.csproj
+c:\dev\sp\sp.api> 
+dotnet add sp.api.csproj reference C:\dev\SP\SP.Common\SP.Common.csproj
+dotnet add sp.api.csproj reference C:\dev\SP\SP.DL\SP.DL.csproj
+dotnet add C:\dev\SP\SP.DL\SP.DL.csproj reference C:\dev\SP\Microsoft.EntityFrameworkCore.UnitOfWork\Microsoft.EntityFrameworkCore.UnitOfWork.csproj
+dotnet add C:\dev\SP\SP.DL\SP.DL.csproj reference C:\dev\SP\SP.DAL\SP.DAL.csproj
+dotnet add C:\dev\SP\SP.DL\SP.DL.csproj reference C:\dev\SP\SP.Common\SP.Common.csproj
+
+====================================================================================================
+npm install npm@latest -g
+npm install yarn@latest -g
+npm install webpack@latest -g
+dotnet restore
+dotnet run
+yarn --version
+npm install typescript@latest -g
+yarn start
+npm rebuild node-sass --force
+set ASPNETCORE_ENVIRONMENT=Development
+======================================= the below working successfully -damien bowden
+npm install npm@latest -g
+npm install yarn -g
+yarn
+webpack
+====================================================
+------------------------------------------
+
+
+
+
+
+
+
