@@ -1,0 +1,9 @@
+﻿Dependency Injection:
+Transient
+Transient lifetime services are created each time they're requested. This lifetime works best for lightweight, stateless services.
+Scoped
+Scoped lifetime services are created once per request.
+Singleton
+Singleton lifetime services are created the first time they're requested (or when ConfigureServices is run if you specify an instance there) 
+and then every subsequent request will use the same instance.
+==================================================================================================================================

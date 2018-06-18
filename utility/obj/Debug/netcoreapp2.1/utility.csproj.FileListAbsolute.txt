@@ -10,9 +10,9 @@ c:\Users\chinn\source\repos\spcs\utility\obj\Debug\netcoreapp2.1\utility.csprojA
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\utility\bin\Debug\netcoreapp2.1\utility.deps.json
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\utility\bin\Debug\netcoreapp2.1\utility.dll
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\utility\bin\Debug\netcoreapp2.1\utility.pdb
+C:\Users\chinn\OneDrive\Documents\GitHub\spcs\utility\obj\Debug\netcoreapp2.1\utility.csprojAssemblyReference.cache
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\utility\obj\Debug\netcoreapp2.1\utility.csproj.CoreCompileInputs.cache
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\utility\obj\Debug\netcoreapp2.1\utility.AssemblyInfoInputs.cache
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\utility\obj\Debug\netcoreapp2.1\utility.AssemblyInfo.cs
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\utility\obj\Debug\netcoreapp2.1\utility.dll
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\utility\obj\Debug\netcoreapp2.1\utility.pdb
-C:\Users\chinn\OneDrive\Documents\GitHub\spcs\utility\obj\Debug\netcoreapp2.1\utility.csprojAssemblyReference.cache

@@ -6,6 +6,10 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.FileProviders;
+using config.Extensions;
+using System;
+using Microsoft.Extensions.Logging;
+using config.Services;
 
 namespace config
 {
@@ -21,13 +25,16 @@ namespace config
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddSingleton<IFileProvider>(new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), "wwwroot")));
-
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+
+            services.AddMemoryCache();
+            services.AddSingleton<IFileProvider>(new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), "Files")));
+            //services.AddSingleton<IFileProvider>(new PhysicalFileProvider(Directory.GetCurrentDirectory()));
+            services.AddSingleton<IReadService, ReadService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILogger<Startup> logger)
         {
             if (env.IsDevelopment())
             {
@@ -37,9 +44,15 @@ namespace config
             {
                 app.UseHsts();
             }
-
+            #region MyRegion
+            //https://techblog.dorogin.com/handling-errors-in-aspnet-core-middleware-e39872496d51
+            //https://scottsauber.com/2017/04/03/adding-global-error-handling-and-logging-in-asp-net-core/
+            #endregion
+            //app.UseExceptionHandler(); 
+            app.UseStaticFilesWithCache(Configuration, logger);
             app.UseHttpsRedirection();
             app.UseMvc();
+            
         }
     }
 }

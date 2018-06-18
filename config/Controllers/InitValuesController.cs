@@ -9,11 +9,17 @@ using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Hosting;
 using config.Models;
 using System;
+using Microsoft.Extensions.Caching.Memory;
+using config.Services;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 
 #region articles
 //https://azure.microsoft.com/en-us/pricing/details/key-vault/
 //https://cryptosense.com/blog/cloud-crypto-providers-aws-vs-google-vs-azure/
 //https://ourcodeworld.com/articles/read/189/how-to-create-a-file-and-generate-a-download-with-javascript-in-the-browser-without-a-server
+//https://github.com/ntn9995/CacheASPCore20/blob/master/WebCache/Controllers/HomeController.cs
+//[ResponseCache(Duration =60 , Location = ResponseCacheLocation.None)]
 #endregion
 
 namespace config.Controllers
@@ -21,21 +27,26 @@ namespace config.Controllers
     //header('Content-type: application/json');
     //[Produces("application/json")]
     //[Route("api/InitValues")]
+    //https://github.com/madskristensen/WebEssentials.AspNetCore.StaticFilesWithCache
     public class InitValuesController : ControllerBase
     {
         private readonly IConfiguration _configuration;
         private readonly ILogger<InitValuesController> _logger;
         private readonly IFileProvider _fileProvider;
         private readonly IHostingEnvironment _hostingEnvironment;
-        private readonly string _path;
-
-        public InitValuesController(IConfiguration configuration, ILogger<InitValuesController> logger, IHostingEnvironment hostingEnvironment, IFileProvider fileProvider)
+        private IMemoryCache _memoryCache;
+        private readonly IReadService _readService;
+        private const string _countriesFileName = "countries.json";
+        private string _countriesJsonFilePath = string.Empty;
+        public InitValuesController(IConfiguration configuration, ILogger<InitValuesController> logger, IHostingEnvironment hostingEnvironment, IMemoryCache memoryCache, IFileProvider fileProvider, IReadService readService)
         {
             _configuration = configuration;
             _hostingEnvironment = hostingEnvironment;
             _logger = logger;
+            _memoryCache = memoryCache;
             _fileProvider = fileProvider;
-            _path = Path.Combine(_hostingEnvironment.ContentRootPath, @"files\countries.json");
+            _readService = readService;
+            _countriesJsonFilePath = Path.Combine(_hostingEnvironment.ContentRootPath, "Files", "countries.json");
         }
 
         [HttpGet]
@@ -53,20 +64,7 @@ namespace config.Controllers
         }
 
         [HttpGet]
-        public IActionResult GetCountryCodeAndName(string TerritoryCode)
-        {
-            Dictionary<string, string> CountryCodesAndNamesDictionary = new Dictionary<string, string>
-            {
-                {"AD", "AD_Andorra"},{"AR", "AR_Argentina"},{"AS", "AS_AmericanSamoa"},{"AT", "AT_Austria"},{"AU", "AU_Australia"},{"AX", "AX_landIslands"},{"BD", "BD_Bangladesh"},{"BE", "BE_Belgium"},{"BG", "BG_Bulgaria"},{"BR", "BR_Brazil"},{"BY", "BY_Belarus"},{"CA", "CA_Canada"},{"CH", "CH_Switzerland"},{"CO", "CO_Colombia"},{"CR", "CR_CostaRica"},{"CZ", "CZ_Czechia"},{"DE", "DE_Germany"},{"DK", "DK_Denmark"},{"DO", "DO_DominicanRepublic"},{"DZ", "DZ_Algeria"},{"ES", "ES_Spain"},{"FI", "FI_Finland"},{"FO", "FO_FaroeIslands"},{"FR", "FR_France"},{"GB", "GB_UnitedKingdom"},{"GF", "GF_FrenchGuiana"},{"GG", "GG_Guernsey"},{"GL", "GL_Greenland"},{"GP", "GP_Guadeloupe"},{"GT", "GT_Guatemala"},{"GU", "GU_Guam"},{"HR", "HR_Croatia"},{"HU", "HU_Hungary"},{"IE", "IE_Ireland"},{"IM", "IM_IsleofMan"},{"IN", "IN_India"},{"IS", "IS_Iceland"},{"IT", "IT_Italy"},{"JE", "JE_Jersey"},{"JP", "JP_Japan"},{"LI", "LI_Liechtenstein"},{"LK", "LK_SriLanka"},{"LT", "LT_Lithuania"},{"LU", "LU_Luxembourg"},{"MC", "MC_Monaco"},{"MD", "MD_Moldova"},{"MH", "MH_MarshallIslands"},{"MK", "MK_Macedonia"},{"MP", "MP_NorthernMarianaIslands"},{"MQ", "MQ_Martinique"},{"MT", "MT_Malta"},{"MX", "MX_Mexico"},{"MY", "MY_Malaysia"},{"NC", "NC_NewCaledonia"},{"NL", "NL_Netherlands"},{"NO", "NO_Norway"},{"NZ", "NZ_NewZealand"},{"PH", "PH_Philippines"},{"PK", "PK_Pakistan"},{"PL", "PL_Poland"},{"PM", "PM_St.Pierre&Miquelon"},{"PR", "PR_PuertoRico"},{"PT", "PT_Portugal"},{"RE", "RE_R�union"},{"RO", "RO_Romania"},{"RU", "RU_Russia"},{"SE", "SE_Sweden"},{"SI", "SI_Slovenia"},{"SJ", "SJ_Svalbard&JanMayen"},{"SK", "SK_Slovakia"},{"SM", "SM_SanMarino"},{"TH", "TH_Thailand"},{"TR", "TR_Turkey"},{"US", "US_UnitedStates"},{"VA", "VA_VaticanCity"},{"VI", "VI_U.S.VirginIslands"},{"WF", "WF_Wallis&Futuna"},{"YT", "YT_Mayotte"},{"ZA", "ZA_SouthAfrica"}
-            };
-            string result;
-            if (CountryCodesAndNamesDictionary.TryGetValue(TerritoryCode, out result))
-                return Ok(result);
-            return NotFound();
-        }
-
-        [HttpGet]
-        public IActionResult GetCountryName(string TerritoryCode)
+        public IActionResult GetCountryNames(string TerritoryCode)
         {
             Dictionary<string, string> CountryNamesDictionary = new Dictionary<string, string>
             {
@@ -78,110 +76,73 @@ namespace config.Controllers
             return NotFound();
         }
 
-        [Route("normal")]
-        public IActionResult DownloadNormal()
+        [Route("countries")]
+        public IActionResult DownloadPhysicalCountriesJsonFile()
         {
-            _logger.LogWarning("Normal ---> download started at {} \n ", DateTime.Now.TimeOfDay);
-
-            var fileInfo = new FileInfo(_path);
-            string a = Path.Combine(_hostingEnvironment.ContentRootPath, @"files\countries.json");
-            return PhysicalFile(a, "application/json", "abc.json");
+            return PhysicalFile(_countriesJsonFilePath, "application/json", "countries.json");
         }
 
-        //[HttpPost]
-        //public async Task<IActionResult> UploadFile(IFormFile file)
-        //{
-        //    if (file == null || file.Length == 0)
-        //        return Content("file not selected");
+        [Route("countriesdata")]
+        public IActionResult GetCountriesJsonDataString()
+        {
+            string CountryCodesAndNames = string.Empty;
+            if (!_memoryCache.TryGetValue(Constants.COUNTRIES, out CountryCodesAndNames))
+            {
+                CountryCodesAndNames = _readService.GetJsonDataFromFile(_countriesFileName);
+                var opts = new MemoryCacheEntryOptions
+                {
+                    SlidingExpiration = TimeSpan.FromDays(Convert.ToInt32(_configuration["InMemoryCacheDays"]))
+                };
+                _memoryCache.Set(Constants.COUNTRIES, CountryCodesAndNames, opts);
+            }
 
-        //    var path = Path.Combine(
-        //                Directory.GetCurrentDirectory(), "wwwroot",
-        //                file.GetFilename());
+            if (string.IsNullOrEmpty(CountryCodesAndNames))
+                return NotFound();
+            return Ok(CountryCodesAndNames);
+        }
 
-        //    using (var stream = new FileStream(path, FileMode.Create))
-        //    {
-        //        await file.CopyToAsync(stream);
-        //    }
+        [HttpPost]
+        public async Task<IActionResult> UploadFile(IFormFile file)
+        {
+            if (file == null || file.Length == 0)
+                return Content("file not selected");
 
-        //    return RedirectToAction("Files");
-        //}
-        //[HttpPost]
-        //public async Task<IActionResult> UploadFiles(List<IFormFile> files)
-        //{
-        //    if (files == null || files.Count == 0)
-        //        return Content("files not selected");
+            var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", file.GetFilename());
 
-        //    foreach (var file in files)
-        //    {
-        //        var path = Path.Combine(
-        //                Directory.GetCurrentDirectory(), "wwwroot",
-        //                file.GetFilename());
+            using (var stream = new FileStream(path, FileMode.Create))
+            {
+                await file.CopyToAsync(stream);
+            }
 
-        //        using (var stream = new FileStream(path, FileMode.Create))
-        //        {
-        //            await file.CopyToAsync(stream);
-        //        }
-        //    }
+            return RedirectToAction("Files");
+        }
 
-        //    return RedirectToAction("Files");
-        //}
-        //[HttpPost]
-        //public async Task<IActionResult> UploadFileViaModel(IFormFile FileToUpload)
-        //{
-        //    if (FileToUpload == null || FileToUpload.Length == 0)
-        //        return Content("file not selected");
+        [HttpPost]
+        public async Task<IActionResult> UploadFiles(List<IFormFile> files)
+        {
+            if (files == null || files.Count == 0)
+                return Content("files not selected");
 
-        //    var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", FileToUpload.GetFilename());
+            foreach (var file in files)
+            {
+                var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", file.GetFilename());
+                using (var stream = new FileStream(path, FileMode.Create))
+                {
+                    await file.CopyToAsync(stream);
+                }
+            }
+            return RedirectToAction("Files");
+        }
 
-        //    using (var stream = new FileStream(path, FileMode.Create))
-        //    {
-        //        await FileToUpload.CopyToAsync(stream);
-        //    }
-
-        //    return RedirectToAction("Files");
-        //}
-        //public IActionResult Files()
-        //{
-        //    Dictionary<string, string> dictFiles = new Dictionary<string, string>();
-        //    //List<FileDetails> Files  = new List<FileDetails>(); // this line is copied from worked code , replaced by me with dictionary
-        //    List<Dictionary<string, string>> FileDicts = new List<Dictionary<string, string>>();
-        //    foreach (var item in this._fileProvider.GetDirectoryContents(""))
-        //    {
-        //        //Files.Add(new FileDetails { Name = item.Name, Path = item.PhysicalPath });
-        //        FileDicts.Add( new Dictionary<string, string>{ {"filename.txt", "my name is chinna!"} } );
-        //    }
-        //    return View(FileDicts);
-        //}
-        //public async Task<IActionResult> Download(string filename)
-        //{
-        //    if (filename == null)
-        //        return Content("filename not present");
-
-        //    var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", filename);
-
-        //    var memory = new MemoryStream();
-        //    using (var stream = new FileStream(path, FileMode.Open))
-        //    {
-        //        await stream.CopyToAsync(memory);
-        //    }
-        //    memory.Position = 0;
-        //    return File(memory, "application/json", Path.GetFileName(path));
-        //}
-        //public async Task<IActionResult> GetCountryJsonFile()
-        //{
-        //    string filename = _configuration.GetConnectionString("coutriesjsonfilename");// "countries.json";
-        //    var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", filename);
-        //    if (!System.IO.File.Exists(filename))
-        //    {
-        //        return Content("");
-        //    }
-        //    var memory = new MemoryStream();
-        //    using (var stream = new FileStream(path, FileMode.Open))
-        //    {
-        //        await stream.CopyToAsync(memory);
-        //    }
-        //    memory.Position = 0;
-        //    return File(memory, "application/json", Path.GetFileName(path));
-        //}
+        public IActionResult Files()
+        {
+            Dictionary<string, string> dictFiles = new Dictionary<string, string>();
+            List<Dictionary<string, string>> FileDicts = new List<Dictionary<string, string>>();
+            foreach (var item in this._fileProvider.GetDirectoryContents(""))
+            {
+                FileDicts.Add(new Dictionary<string, string> { { "filename.txt", "my name is chinna!" } });
+            }
+            return Ok(FileDicts);
+        }
     }
 }

@@ -10,9 +10,9 @@ c:\Users\chinn\source\repos\spcs\SP.StaticData\obj\Debug\netcoreapp2.1\SP.Static
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\SP.StaticData\bin\Debug\netcoreapp2.1\SP.StaticData.deps.json
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\SP.StaticData\bin\Debug\netcoreapp2.1\SP.StaticData.dll
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\SP.StaticData\bin\Debug\netcoreapp2.1\SP.StaticData.pdb
+C:\Users\chinn\OneDrive\Documents\GitHub\spcs\SP.StaticData\obj\Debug\netcoreapp2.1\SP.StaticData.csprojAssemblyReference.cache
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\SP.StaticData\obj\Debug\netcoreapp2.1\SP.StaticData.csproj.CoreCompileInputs.cache
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\SP.StaticData\obj\Debug\netcoreapp2.1\SP.StaticData.AssemblyInfoInputs.cache
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\SP.StaticData\obj\Debug\netcoreapp2.1\SP.StaticData.AssemblyInfo.cs
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\SP.StaticData\obj\Debug\netcoreapp2.1\SP.StaticData.dll
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\SP.StaticData\obj\Debug\netcoreapp2.1\SP.StaticData.pdb
-C:\Users\chinn\OneDrive\Documents\GitHub\spcs\SP.StaticData\obj\Debug\netcoreapp2.1\SP.StaticData.csprojAssemblyReference.cache
