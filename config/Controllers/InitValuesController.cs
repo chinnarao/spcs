@@ -20,6 +20,7 @@ using Microsoft.AspNetCore.Http;
 //https://ourcodeworld.com/articles/read/189/how-to-create-a-file-and-generate-a-download-with-javascript-in-the-browser-without-a-server
 //https://github.com/ntn9995/CacheASPCore20/blob/master/WebCache/Controllers/HomeController.cs
 //[ResponseCache(Duration =60 , Location = ResponseCacheLocation.None)]
+//https://docs.microsoft.com/en-us/aspnet/core/web-api/?view=aspnetcore-2.1
 #endregion
 
 namespace config.Controllers
@@ -30,7 +31,8 @@ namespace config.Controllers
     //https://github.com/madskristensen/WebEssentials.AspNetCore.StaticFilesWithCache
     public class InitValuesController : ControllerBase
     {
-        private readonly IConfiguration _configuration;
+        #region local variables
+        private readonly IConfiguration _config;
         private readonly ILogger<InitValuesController> _logger;
         private readonly IFileProvider _fileProvider;
         private readonly IHostingEnvironment _hostingEnvironment;
@@ -38,9 +40,11 @@ namespace config.Controllers
         private readonly IReadService _readService;
         private const string _countriesFileName = "countries.json";
         private string _countriesJsonFilePath = string.Empty;
+        #endregion
+
         public InitValuesController(IConfiguration configuration, ILogger<InitValuesController> logger, IHostingEnvironment hostingEnvironment, IMemoryCache memoryCache, IFileProvider fileProvider, IReadService readService)
         {
-            _configuration = configuration;
+            _config = configuration;
             _hostingEnvironment = hostingEnvironment;
             _logger = logger;
             _memoryCache = memoryCache;
@@ -53,15 +57,21 @@ namespace config.Controllers
         [HttpGet]
         public IActionResult Get()
         {
-            ClientAppStartupVM vm = new ClientAppStartupVM();
-            vm.SignUpUrl = "https://localhost:44396/account/signup";
-            vm.LoginUrl = "https://localhost:44396/account/login";
-            vm.AppBaseUrl = "https://localhost:44396";
-            vm.Facebook = "Facebook fsdfsfsfsfsfs3543535353";
-            vm.Google = "Google";
-            vm.LinkedIn = "LinkedIn";
-            vm.Microsoft = "Microsoft";
-            return Ok(vm);
+            string _fbappid = _config["auth:facebook:appid"];
+            string _fbappsecret = _config["auth:facebook:appsecret"];
+            string _gappid = _config["auth:google:appid"];
+            string _gappsecret = _config["auth:google:appsecret"];
+            string _tappid = _config["auth:twitter:appid"];
+            string _tappsecret = _config["auth:twitter:appsecret"];
+            string _gitappid = _config["auth:github:appid"];
+            string _gitappsecret = _config["auth:github:appsecret"];
+
+            var data = new { fbappid = _fbappid, fbappsecret = _fbappsecret,
+                             gappid = _gappid, gappsecret = _gappsecret,
+                             tappid = _tappid, tappsecret = _tappsecret,
+                             gitappid = _gitappid, gitappsecret = _gitappsecret
+                            };
+            return Ok(data);
         }
 
         [Route("[action]/{TerritoryCode}")]
@@ -95,7 +105,7 @@ namespace config.Controllers
                 CountryCodesAndNames = _readService.GetJsonDataFromFile(_countriesFileName);
                 var opts = new MemoryCacheEntryOptions
                 {
-                    SlidingExpiration = TimeSpan.FromDays(Convert.ToInt32(_configuration["InMemoryCacheDays"]))
+                    SlidingExpiration = TimeSpan.FromDays(Convert.ToInt32(_config["InMemoryCacheDays"]))
                 };
                 _memoryCache.Set(Constants.COUNTRIES, CountryCodesAndNames, opts);
             }
@@ -105,6 +115,7 @@ namespace config.Controllers
             return Ok(CountryCodesAndNames);
         }
 
+        #region Not tested methods
         [HttpPost]
         public async Task<IActionResult> UploadFile(IFormFile file)
         {
@@ -120,7 +131,6 @@ namespace config.Controllers
 
             return RedirectToAction("Files");
         }
-
         [HttpPost]
         public async Task<IActionResult> UploadFiles(List<IFormFile> files)
         {
@@ -137,7 +147,6 @@ namespace config.Controllers
             }
             return RedirectToAction("Files");
         }
-
         [HttpGet]
         public IActionResult Files()
         {
@@ -149,5 +158,6 @@ namespace config.Controllers
             }
             return Ok(FileDicts);
         }
+        #endregion
     }
 }
