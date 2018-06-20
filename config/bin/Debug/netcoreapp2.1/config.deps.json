@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "8d19439ef22c432fe18f0eac697c8789fe30c00a"
+    "signature": "261a0b044ceacfd90caaf18055e1ffd5e3a831e3"
   },
   "compilationOptions": {
     "defines": [
@@ -25,7 +25,8 @@
       "config/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.App": "2.1.0",
-          "Microsoft.NETCore.App": "2.1.0"
+          "Microsoft.NETCore.App": "2.1.0",
+          "NetEscapades.Extensions.Logging.RollingFile": "1.0.0"
         },
         "runtime": {
           "config.dll": {}
@@ -200,6 +201,20 @@
       },
       "Microsoft.NETCore.Platforms/2.1.0": {},
       "Microsoft.NETCore.Targets/2.1.0": {},
+      "NetEscapades.Extensions.Logging.RollingFile/1.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Logging": "2.1.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/NetEscapades.Extensions.Logging.RollingFile.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/NetEscapades.Extensions.Logging.RollingFile.dll": {}
+        }
+      },
       "NETStandard.Library/2.0.3": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.1.0"
@@ -3197,6 +3212,13 @@
       "sha512": "sha512-etaYwrLZQUS+b3UWTpCnUggd6SQ/ZIkZ5pHnoR7+dIWt/wp2Rv3CvMKOZISsrt7FYCHKwCxfcepuuyEWkQxADg==",
       "path": "microsoft.netcore.targets/2.1.0",
       "hashPath": "microsoft.netcore.targets.2.1.0.nupkg.sha512"
+    },
+    "NetEscapades.Extensions.Logging.RollingFile/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-39HIu3foQVo7eq5hJiemmh2Z3isQTNomF0N4YWTnQn8NNWrcNRWBvHDzh1wPC8echMMnr9CiYb34xF5VnKp6Zg==",
+      "path": "netescapades.extensions.logging.rollingfile/1.0.0",
+      "hashPath": "netescapades.extensions.logging.rollingfile.1.0.0.nupkg.sha512"
     },
     "NETStandard.Library/2.0.3": {
       "type": "package",

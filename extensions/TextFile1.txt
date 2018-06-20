@@ -1,0 +1,1 @@
+﻿https://github.com/ws-dotnet-core/BWS.Utils.AspNetCore

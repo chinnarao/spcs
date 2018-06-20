@@ -2601,6 +2601,18 @@
           }
         }
       },
+      "NetEscapades.Extensions.Logging.RollingFile/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging": "2.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/NetEscapades.Extensions.Logging.RollingFile.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/NetEscapades.Extensions.Logging.RollingFile.dll": {}
+        }
+      },
       "NETStandard.Library/2.0.3": {
         "type": "package",
         "dependencies": {
@@ -6764,6 +6776,17 @@
         "runtimes/win/lib/netstandard2.0/Microsoft.Win32.Registry.dll",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "NetEscapades.Extensions.Logging.RollingFile/1.0.0": {
+      "sha512": "39HIu3foQVo7eq5hJiemmh2Z3isQTNomF0N4YWTnQn8NNWrcNRWBvHDzh1wPC8echMMnr9CiYb34xF5VnKp6Zg==",
+      "type": "package",
+      "path": "netescapades.extensions.logging.rollingfile/1.0.0",
+      "files": [
+        "lib/netstandard2.0/NetEscapades.Extensions.Logging.RollingFile.dll",
+        "lib/netstandard2.0/NetEscapades.Extensions.Logging.RollingFile.xml",
+        "netescapades.extensions.logging.rollingfile.1.0.0.nupkg.sha512",
+        "netescapades.extensions.logging.rollingfile.nuspec"
       ]
     },
     "NETStandard.Library/2.0.3": {
@@ -11502,7 +11525,8 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
       "Microsoft.AspNetCore.App >= 2.1.0",
-      "Microsoft.NETCore.App >= 2.1.0"
+      "Microsoft.NETCore.App >= 2.1.0",
+      "NetEscapades.Extensions.Logging.RollingFile >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -11556,6 +11580,10 @@
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true
+          },
+          "NetEscapades.Extensions.Logging.RollingFile": {
+            "target": "Package",
+            "version": "[1.0.0, )"
           }
         },
         "imports": [

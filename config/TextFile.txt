@@ -7,3 +7,4 @@ Singleton
 Singleton lifetime services are created the first time they're requested (or when ConfigureServices is run if you specify an instance there) 
 and then every subsequent request will use the same instance.
 ==================================================================================================================================
+https://scottsauber.com/2017/04/03/adding-global-error-handling-and-logging-in-asp-net-core/
