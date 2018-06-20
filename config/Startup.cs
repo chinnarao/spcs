@@ -10,6 +10,7 @@ using config.Extensions;
 using System;
 using Microsoft.Extensions.Logging;
 using config.Services;
+using Swashbuckle.AspNetCore.Swagger;
 
 namespace config
 {
@@ -29,6 +30,13 @@ namespace config
             services.AddMemoryCache();
             services.AddSingleton<IFileProvider>(new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), "Files")));
             services.AddSingleton<IReadService, ReadService>();
+
+            #region Swagger
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new Info { Title = "My API", Version = "v1" });
+            });
+            #endregion
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILogger<Startup> logger)
@@ -41,6 +49,11 @@ namespace config
             {
                 app.UseHsts();
             }
+            #region Swagger
+            //https://localhost:44382/
+            app.UseSwagger();
+            app.UseSwaggerUI(c => { c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1"); c.RoutePrefix = string.Empty;});
+            #endregion
             app.UseStaticFilesWithCache(Configuration, logger);
             app.UseHttpsRedirection();
             app.UseMvc();

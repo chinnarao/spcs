@@ -1,0 +1,50 @@
+﻿==================================swagger step by step========================================
+step1: nuget: install : Swashbuckle.AspNetCore  (2.5.0 v)
+step2: startUp.cs : using Swashbuckle.AspNetCore.Swagger;
+step3: 
+public void ConfigureServices(IServiceCollection services)
+        {
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            #region Swagger
+            // Register the Swagger generator, defining 1 or more Swagger documents
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new Info { Title = "My API", Version = "v1" });
+            });
+            #endregion
+        }
+step4: 
+public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        {
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+            }
+            else
+            {
+                app.UseHsts();
+            }
+
+            #region Swagger
+            //http://localhost:<port>/swagger
+            //http://localhost:<port>/swagger/v1/swagger.json
+
+            // Enable middleware to serve generated Swagger as a JSON endpoint.
+            app.UseSwagger();
+
+            // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.), 
+            // specifying the Swagger JSON endpoint.
+            app.UseSwaggerUI(c =>
+            {
+                
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+                c.RoutePrefix = string.Empty;
+            });
+            #endregion
+
+            app.UseHttpsRedirection();
+            app.UseMvc();
+        }
+
+
+==============================================================================================

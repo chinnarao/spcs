@@ -49,6 +49,7 @@ namespace config.Controllers
             _countriesJsonFilePath = Path.Combine(_hostingEnvironment.ContentRootPath, "Files", "countries.json");
         }
 
+        [Route("initvalues")]
         [HttpGet]
         public IActionResult Get()
         {
@@ -63,6 +64,7 @@ namespace config.Controllers
             return Ok(vm);
         }
 
+        [Route("[action]/{TerritoryCode}")]
         [HttpGet]
         public IActionResult GetCountryNames(string TerritoryCode)
         {
@@ -77,12 +79,14 @@ namespace config.Controllers
         }
 
         [Route("countries")]
+        [HttpGet]
         public IActionResult DownloadPhysicalCountriesJsonFile()
         {
             return PhysicalFile(_countriesJsonFilePath, "application/json", "countries.json");
         }
 
         [Route("countriesdata")]
+        [HttpGet]
         public IActionResult GetCountriesJsonDataString()
         {
             string CountryCodesAndNames = string.Empty;
@@ -134,6 +138,7 @@ namespace config.Controllers
             return RedirectToAction("Files");
         }
 
+        [HttpGet]
         public IActionResult Files()
         {
             Dictionary<string, string> dictFiles = new Dictionary<string, string>();
