@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ad.store;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ad.Controllers
@@ -14,6 +15,8 @@ namespace ad.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
+            GoogleCloudStore store = new GoogleCloudStore();
+            store.ListBuckets();
             return new string[] { "value1", "value2" };
         }
 

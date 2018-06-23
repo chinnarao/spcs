@@ -3,29 +3,31 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2026
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "config", "config\config.csproj", "{3E7986F2-DD28-452F-B5D2-46305BFAF111}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "config", "config\config.csproj", "{3E7986F2-DD28-452F-B5D2-46305BFAF111}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ad", "ad\ad.csproj", "{C18A98C3-B1ED-4C06-BDF4-B062597A2EAC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ad", "ad\ad.csproj", "{C18A98C3-B1ED-4C06-BDF4-B062597A2EAC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "common", "common\common.csproj", "{161507F4-82A5-464C-8FE5-62A22FBF3A1B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "common", "common\common.csproj", "{161507F4-82A5-464C-8FE5-62A22FBF3A1B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "extensions", "extensions\extensions.csproj", "{D91DE675-7638-4F77-BD2F-AA9EE134382D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "extensions", "extensions\extensions.csproj", "{D91DE675-7638-4F77-BD2F-AA9EE134382D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ad.services", "ad.services\ad.services.csproj", "{61020E2B-1284-499E-BE79-29E3449F399A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ad.services", "ad.services\ad.services.csproj", "{61020E2B-1284-499E-BE79-29E3449F399A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ad.services.db", "ad.services.db\ad.services.db.csproj", "{96505B96-7B74-4509-98AD-D05903ADD41D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ad.services.db", "ad.services.db\ad.services.db.csproj", "{96505B96-7B74-4509-98AD-D05903ADD41D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "utility", "utility\utility.csproj", "{19651391-6015-4F4F-9DC0-CCBF01551E05}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "utility", "utility\utility.csproj", "{19651391-6015-4F4F-9DC0-CCBF01551E05}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.EntityFrameworkCore.UnitOfWork", "Microsoft.EntityFrameworkCore.UnitOfWork\Microsoft.EntityFrameworkCore.UnitOfWork.csproj", "{C8660D46-E5B7-4EF5-9315-0620CA24171F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SP.DL", "SP.DL\SP.DL.csproj", "{D22BB18A-2BB8-4EBF-8D8A-53E4E017D30F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SP.DL", "SP.DL\SP.DL.csproj", "{D22BB18A-2BB8-4EBF-8D8A-53E4E017D30F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SP.StaticData", "SP.StaticData\SP.StaticData.csproj", "{598FBBE7-FF5F-492D-A147-ED0EC8D0A967}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SP.StaticData", "SP.StaticData\SP.StaticData.csproj", "{598FBBE7-FF5F-492D-A147-ED0EC8D0A967}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SP.Territories", "SP.Territories\SP.Territories.csproj", "{B958E4FC-F875-4DC8-9CD7-AF7B21CEDBA4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SP.Territories", "SP.Territories\SP.Territories.csproj", "{B958E4FC-F875-4DC8-9CD7-AF7B21CEDBA4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SP.DAL", "SP.DAL\SP.DAL.csproj", "{8BFB6710-9374-4249-B187-93C247D0ACD6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SP.DAL", "SP.DAL\SP.DAL.csproj", "{8BFB6710-9374-4249-B187-93C247D0ACD6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ad.store", "ad.store\ad.store.csproj", "{70DF568A-BB60-4164-A5EB-83915F12E695}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -81,6 +83,10 @@ Global
 		{8BFB6710-9374-4249-B187-93C247D0ACD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8BFB6710-9374-4249-B187-93C247D0ACD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8BFB6710-9374-4249-B187-93C247D0ACD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70DF568A-BB60-4164-A5EB-83915F12E695}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70DF568A-BB60-4164-A5EB-83915F12E695}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70DF568A-BB60-4164-A5EB-83915F12E695}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70DF568A-BB60-4164-A5EB-83915F12E695}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

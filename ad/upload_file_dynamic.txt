@@ -1,0 +1,35 @@
+﻿https://www.bennadel.com/blog/1375-ask-ben-dynamically-adding-file-upload-fields-to-a-form-using-jquery.htm
+http://wabism.com/html5-file-api-how-to-upload-files-dynamically-using-ajax/
+
+
+
+==============================================google cloud, multi regional storage======
+goto and follow: https://github.com/GoogleCloudPlatform/dotnet-docs-samples
+project id : oceanic-cacao-203021
+project name: spgoogle
+link url: https://console.cloud.google.com/storage/browser/spcsad_first
+link for gsutil:  gs://spcsad_first
+login url : https://console.cloud.google.com/storage/browser/spcsad_first?project=oceanic-cacao-203021&folder&organizationId
+
+service account name: spgoogle;  role:storage admin
+downloaded file : spgoogle-fe1635053afe.json
+===============================powershell=========================================
+$env:GOOGLE_APPLICATION_CREDENTIALS = "$env:USERPROFILE\Downloads\your-project-id-dea9fa230eae3.json"
+[Environment]::SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", "$env:USERPROFILE\Downloads\your-project-id-dea9fa230eae3.json", "User")
+
+$env:GOOGLE_APPLICATION_CREDENTIALS = "$env:C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad\spgoogle-fe1635053afe.json"
+[Environment]::SetEnvironmentVariable("GOOGLE_APPLICATION_CREDENTIALS", "$env:C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad\spgoogle-fe1635053afe.json", "User")
+
+=================================================================================
+
+credit card used : bofa
+===========================cloud storage ids===============================================================
+You	
+00b4903a972638003aeeb5ae16fd51069ab89bd93791ea6c4ec354e71fc2d8be
+Owners	
+00b4903a97ab7c7bcbf96667af6d6473a49f08e7b5ba64148a850df7044a1dbd
+Editor	
+00b4903a976c6ff04e8dfd3842a5987c435dc49ac6c68d80846a243f7373b79c
+Team	
+00b4903a9758b9931c6341c39d8c8aa865c13c83991a2c951333b9a8a20a4fcc
+===========================================================================================================

@@ -15,4 +15,3 @@ C:\Users\chinn\OneDrive\Documents\GitHub\spcs\common\obj\Debug\netcoreapp2.1\com
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\common\obj\Debug\netcoreapp2.1\common.AssemblyInfo.cs
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\common\obj\Debug\netcoreapp2.1\common.dll
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\common\obj\Debug\netcoreapp2.1\common.pdb
-C:\Users\chinn\OneDrive\Documents\GitHub\spcs\common\obj\Debug\netcoreapp2.1\common.csprojAssemblyReference.cache

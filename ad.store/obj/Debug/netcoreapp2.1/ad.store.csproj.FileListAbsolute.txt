@@ -1,0 +1,9 @@
+C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad.store\bin\Debug\netcoreapp2.1\ad.store.deps.json
+C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad.store\bin\Debug\netcoreapp2.1\ad.store.dll
+C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad.store\bin\Debug\netcoreapp2.1\ad.store.pdb
+C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad.store\obj\Debug\netcoreapp2.1\ad.store.csproj.CoreCompileInputs.cache
+C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad.store\obj\Debug\netcoreapp2.1\ad.store.AssemblyInfoInputs.cache
+C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad.store\obj\Debug\netcoreapp2.1\ad.store.AssemblyInfo.cs
+C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad.store\obj\Debug\netcoreapp2.1\ad.store.dll
+C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad.store\obj\Debug\netcoreapp2.1\ad.store.pdb
+C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad.store\obj\Debug\netcoreapp2.1\ad.store.csprojAssemblyReference.cache

@@ -1,0 +1,12 @@
+C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad.services.db\bin\Release\netcoreapp2.1\ad.services.db.deps.json
+C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad.services.db\bin\Release\netcoreapp2.1\ad.services.db.dll
+C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad.services.db\bin\Release\netcoreapp2.1\ad.services.db.pdb
+C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad.services.db\bin\Release\netcoreapp2.1\common.dll
+C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad.services.db\bin\Release\netcoreapp2.1\common.pdb
+C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad.services.db\obj\Release\netcoreapp2.1\ad.services.db.csprojAssemblyReference.cache
+C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad.services.db\obj\Release\netcoreapp2.1\ad.services.db.csproj.CoreCompileInputs.cache
+C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad.services.db\obj\Release\netcoreapp2.1\ad.services.db.AssemblyInfoInputs.cache
+C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad.services.db\obj\Release\netcoreapp2.1\ad.services.db.AssemblyInfo.cs
+C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad.services.db\obj\Release\netcoreapp2.1\ad.services.db.csproj.CopyComplete
+C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad.services.db\obj\Release\netcoreapp2.1\ad.services.db.dll
+C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad.services.db\obj\Release\netcoreapp2.1\ad.services.db.pdb

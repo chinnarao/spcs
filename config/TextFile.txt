@@ -8,3 +8,9 @@ Singleton lifetime services are created the first time they're requested (or whe
 and then every subsequent request will use the same instance.
 ==================================================================================================================================
 https://scottsauber.com/2017/04/03/adding-global-error-handling-and-logging-in-asp-net-core/
+
+==========================Azure App Service Editor ===================================================================
+https://social.technet.microsoft.com/wiki/contents/articles/36467.understanding-the-azure-app-service-editor.aspx
+https://www.youtube.com/watch?v=vYCHpo1wf1E
+git deploy to azure : https://www.youtube.com/watch?v=3WDe3l1M-3U
+======================================================================================================================
