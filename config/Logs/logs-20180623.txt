@@ -6,3 +6,13 @@
 2018-06-23 00:02:20.916 -07:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor: Executing ObjectResult, writing value of type 'System.String[]'.
 2018-06-23 00:02:20.924 -07:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action config.Controllers.ValuesController.Get (config) in 20.9489ms
 2018-06-23 00:02:20.927 -07:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 124.6448ms 200 application/json; charset=utf-8
+2018-06-23 01:12:39.698 -07:00 [Information] Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager: User profile is available. Using 'C:\Users\chinn\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-06-23 01:12:40.249 -07:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:44382/api/values  
+2018-06-23 01:12:40.251 -07:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 DEBUG http://localhost:60288/  0
+2018-06-23 01:12:40.280 -07:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 29.7553ms 200 
+2018-06-23 01:12:40.434 -07:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "Get", controller = "Values"}. Executing action config.Controllers.ValuesController.Get (config)
+2018-06-23 01:12:40.442 -07:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method config.Controllers.ValuesController.Get (config) - Validation state: Valid
+2018-06-23 01:12:40.446 -07:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action method config.Controllers.ValuesController.Get (config), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.5218ms.
+2018-06-23 01:12:40.454 -07:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor: Executing ObjectResult, writing value of type 'System.String[]'.
+2018-06-23 01:12:40.464 -07:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action config.Controllers.ValuesController.Get (config) in 26.9328ms
+2018-06-23 01:12:40.470 -07:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 221.6624ms 200 application/json; charset=utf-8
