@@ -132,7 +132,6 @@ C:\Users\chinn\OneDrive\Documents\GitHub\spcs\Microsoft.EntityFrameworkCore.Unit
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\Microsoft.EntityFrameworkCore.UnitOfWork\bin\Debug\net451\System.Interactive.Async.dll
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\Microsoft.EntityFrameworkCore.UnitOfWork\bin\Debug\net451\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\Microsoft.EntityFrameworkCore.UnitOfWork\bin\Debug\net451\System.Runtime.InteropServices.RuntimeInformation.dll
-C:\Users\chinn\OneDrive\Documents\GitHub\spcs\Microsoft.EntityFrameworkCore.UnitOfWork\obj\Debug\net451\Microsoft.EntityFrameworkCore.UnitOfWork.csprojAssemblyReference.cache
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\Microsoft.EntityFrameworkCore.UnitOfWork\obj\Debug\net451\Microsoft.EntityFrameworkCore.UnitOfWork.csproj.CoreCompileInputs.cache
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\Microsoft.EntityFrameworkCore.UnitOfWork\obj\Debug\net451\Microsoft.EntityFrameworkCore.UnitOfWork.AssemblyInfoInputs.cache
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\Microsoft.EntityFrameworkCore.UnitOfWork\obj\Debug\net451\Microsoft.EntityFrameworkCore.UnitOfWork.AssemblyInfo.cs

@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using ad.store;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ad.Controllers
@@ -15,8 +12,8 @@ namespace ad.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
-            GoogleCloudStore store = new GoogleCloudStore();
-            store.ListBuckets();
+//            GoogleCloudStore store = new GoogleCloudStore();
+  //          store.UploadFile("spcsad_first", @"C:\Users\chinn\OneDrive\Pictures\googleCloud.PNG", "aaaa.PNG");
             return new string[] { "value1", "value2" };
         }
 

@@ -1,0 +1,9 @@
+C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad.services.googlecloudstorage\bin\Debug\netcoreapp2.1\ad.services.googlecloudstorage.deps.json
+C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad.services.googlecloudstorage\bin\Debug\netcoreapp2.1\ad.services.googlecloudstorage.dll
+C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad.services.googlecloudstorage\obj\Debug\netcoreapp2.1\ad.services.googlecloudstorage.csprojAssemblyReference.cache
+C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad.services.googlecloudstorage\obj\Debug\netcoreapp2.1\ad.services.googlecloudstorage.csproj.CoreCompileInputs.cache
+C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad.services.googlecloudstorage\obj\Debug\netcoreapp2.1\ad.services.googlecloudstorage.AssemblyInfoInputs.cache
+C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad.services.googlecloudstorage\obj\Debug\netcoreapp2.1\ad.services.googlecloudstorage.AssemblyInfo.cs
+C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad.services.googlecloudstorage\bin\Debug\netcoreapp2.1\ad.services.googlecloudstorage.pdb
+C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad.services.googlecloudstorage\obj\Debug\netcoreapp2.1\ad.services.googlecloudstorage.dll
+C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad.services.googlecloudstorage\obj\Debug\netcoreapp2.1\ad.services.googlecloudstorage.pdb

@@ -27,7 +27,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SP.Territories", "SP.Territ
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SP.DAL", "SP.DAL\SP.DAL.csproj", "{8BFB6710-9374-4249-B187-93C247D0ACD6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ad.store", "ad.store\ad.store.csproj", "{70DF568A-BB60-4164-A5EB-83915F12E695}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ad.services.googlecloudstorage", "ad.services.googlecloudstorage\ad.services.googlecloudstorage.csproj", "{36375B6F-3920-4F16-AF68-7B2DD4773776}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ad.services.htmltemplate", "ad.services.htmltemplate\ad.services.htmltemplate.csproj", "{F104F3FB-7FA7-4017-8A2C-AF1D27AC159D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ad.xunittest", "ad.xunittest\ad.xunittest.csproj", "{32120FE3-D2A6-4965-B4D0-D38C69125FEB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ad.services.htmltemplate.xunittest", "ad.services.htmltemplate.xunittest\ad.services.htmltemplate.xunittest.csproj", "{310255A2-30E4-47B6-841D-0520EA57BFF2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -83,10 +89,22 @@ Global
 		{8BFB6710-9374-4249-B187-93C247D0ACD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8BFB6710-9374-4249-B187-93C247D0ACD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8BFB6710-9374-4249-B187-93C247D0ACD6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{70DF568A-BB60-4164-A5EB-83915F12E695}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{70DF568A-BB60-4164-A5EB-83915F12E695}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{70DF568A-BB60-4164-A5EB-83915F12E695}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{70DF568A-BB60-4164-A5EB-83915F12E695}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36375B6F-3920-4F16-AF68-7B2DD4773776}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36375B6F-3920-4F16-AF68-7B2DD4773776}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36375B6F-3920-4F16-AF68-7B2DD4773776}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36375B6F-3920-4F16-AF68-7B2DD4773776}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F104F3FB-7FA7-4017-8A2C-AF1D27AC159D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F104F3FB-7FA7-4017-8A2C-AF1D27AC159D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F104F3FB-7FA7-4017-8A2C-AF1D27AC159D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F104F3FB-7FA7-4017-8A2C-AF1D27AC159D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32120FE3-D2A6-4965-B4D0-D38C69125FEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32120FE3-D2A6-4965-B4D0-D38C69125FEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32120FE3-D2A6-4965-B4D0-D38C69125FEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32120FE3-D2A6-4965-B4D0-D38C69125FEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{310255A2-30E4-47B6-841D-0520EA57BFF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{310255A2-30E4-47B6-841D-0520EA57BFF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{310255A2-30E4-47B6-841D-0520EA57BFF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{310255A2-30E4-47B6-841D-0520EA57BFF2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

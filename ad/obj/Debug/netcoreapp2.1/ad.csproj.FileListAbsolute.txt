@@ -40,5 +40,3 @@ C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad\obj\Debug\netcoreapp2.1\ad.Razo
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad\obj\Debug\netcoreapp2.1\ad.csproj.CopyComplete
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad\obj\Debug\netcoreapp2.1\ad.dll
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad\obj\Debug\netcoreapp2.1\ad.pdb
-C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad\bin\Debug\netcoreapp2.1\ad.store.dll
-C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad\bin\Debug\netcoreapp2.1\ad.store.pdb

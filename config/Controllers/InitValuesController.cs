@@ -36,7 +36,7 @@ namespace config.Controllers
         private readonly ILogger<InitValuesController> _logger;
         private readonly IFileProvider _fileProvider;
         private readonly IHostingEnvironment _hostingEnvironment;
-        private IMemoryCache _memoryCache;
+        private readonly IMemoryCache _memoryCache;
         private readonly IReadService _readService;
         private const string _countriesFileName = "countries.json";
         private string _countriesJsonFilePath = string.Empty;

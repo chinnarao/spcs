@@ -19,7 +19,7 @@ namespace ad.Controllers
         public IActionResult GetAll()
         {
             _logger.LogInformation(LoggingEvents.LIST_ITEMS, "Listing all items");
-            return Ok();
+            return Ok( new { Name = "Chinna", Email = "chinnarao@live.com" });
         }
     }
 }

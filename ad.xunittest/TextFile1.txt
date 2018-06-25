@@ -1,0 +1,3 @@
+﻿https://www.youtube.com/watch?v=p5l7x_pFjmI    --excellent, created march 2018
+
+https://weblog.west-wind.com/posts/2018/Feb/18/Accessing-Configuration-in-NET-Core-Test-Projects

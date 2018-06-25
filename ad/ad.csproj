@@ -14,7 +14,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ad.services\ad.services.csproj" />
-    <ProjectReference Include="..\ad.store\ad.store.csproj" />
     <ProjectReference Include="..\common\common.csproj" />
   </ItemGroup>
 

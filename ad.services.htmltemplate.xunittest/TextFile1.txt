@@ -1,0 +1,3 @@
+﻿https://weblog.west-wind.com/posts/2018/Feb/18/Accessing-Configuration-in-NET-Core-Test-Projects
+
+https://github.com/aspnet/Docs/tree/master/aspnetcore/test/integration-tests/samples/2.x
