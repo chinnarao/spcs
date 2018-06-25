@@ -25,11 +25,17 @@ namespace ad.services
         {
             return _fileReadService.FileAsString(fileName, inMemoryCachyExpireDays);
         }
+
+        public string SetAdHtmlFileTemplateContent(Dictionary<string, string> dict)
+        {
+            throw new System.NotImplementedException();
+        }
     }
 
     public interface IAdService
     {
         string GetAdHtmlFileTemplateContent(string fileName, int inMemoryCachyExpireDays);
+        string SetAdHtmlFileTemplateContent(Dictionary<string,string> dict);
         //IEnumerable<TEntity> GetAll<TEntity>() where TEntity : AdVM, new();
     }
 }

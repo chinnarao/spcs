@@ -26,3 +26,26 @@
 2018-06-25 01:13:00.598 -07:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor: Executing ObjectResult, writing value of type 'System.String[]'.
 2018-06-25 01:13:00.607 -07:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action ad.Controllers.ValuesController.Get (ad) in 27.0948ms
 2018-06-25 01:13:00.616 -07:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 224.9985ms 200 application/json; charset=utf-8
+2018-06-25 01:18:39.517 -07:00 [Information] Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager: User profile is available. Using 'C:\Users\chinn\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-06-25 01:18:40.233 -07:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 DEBUG http://localhost:60325/  0
+2018-06-25 01:18:40.235 -07:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:44309/api/values  
+2018-06-25 01:18:40.270 -07:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 34.4662ms 200 
+2018-06-25 01:18:40.513 -07:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "Get", controller = "Values"}. Executing action ad.Controllers.ValuesController.Get (ad)
+2018-06-25 01:18:40.532 -07:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method ad.Controllers.ValuesController.Get (ad) - Validation state: Valid
+2018-06-25 01:18:40.539 -07:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action method ad.Controllers.ValuesController.Get (ad), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.5973ms.
+2018-06-25 01:18:40.552 -07:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor: Executing ObjectResult, writing value of type 'System.String[]'.
+2018-06-25 01:18:40.565 -07:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action ad.Controllers.ValuesController.Get (ad) in 46.8706ms
+2018-06-25 01:18:40.572 -07:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 338.9715ms 200 application/json; charset=utf-8
+2018-06-25 01:18:40.762 -07:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:44309/favicon.ico  
+2018-06-25 01:18:40.769 -07:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 3.2382ms 404 
+2018-06-25 01:21:16.702 -07:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:44309/index.html  
+2018-06-25 01:21:16.727 -07:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 24.7455ms 200 text/html
+2018-06-25 01:21:17.137 -07:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:44309/swagger/v1/swagger.json  
+2018-06-25 01:21:17.277 -07:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 140.8999ms 200 application/json;charset=utf-8
+2018-06-25 01:21:21.732 -07:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:44309/Ad/PostAd  
+2018-06-25 01:21:21.736 -07:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "PostAd", controller = "Ad"}. Executing action ad.Controllers.AdController.PostAd (ad)
+2018-06-25 01:21:26.678 -07:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method ad.Controllers.AdController.PostAd (ad) - Validation state: Valid
+2018-06-25 01:21:27.212 -07:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action method ad.Controllers.AdController.PostAd (ad), returned result Microsoft.AspNetCore.Mvc.OkObjectResult in 532.0806ms.
+2018-06-25 01:21:27.219 -07:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor: Executing ObjectResult, writing value of type '<>f__AnonymousType0`2[[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2018-06-25 01:21:27.223 -07:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action ad.Controllers.AdController.PostAd (ad) in 5484.6574ms
+2018-06-25 01:21:27.225 -07:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 5493.4078ms 200 application/json; charset=utf-8

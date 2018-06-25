@@ -1,10 +1,7 @@
 ﻿using Microsoft.Extensions.Caching.Memory;
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Text;
 using common.constants;
-using Microsoft.Extensions.Configuration;
 
 namespace ad.services.htmltemplate
 {
@@ -51,10 +48,22 @@ namespace ad.services.htmltemplate
 
             return _htmlFileContent;
         }
+
+        public string FillContent(string content, object anonymousDataObject)
+        {
+            var template = Scriban.Template.Parse(content);
+            if (template.HasErrors)
+            {
+                throw new Exception(string.Join<Scriban.Parsing.LogMessage>(',', template.Messages.ToArray()));
+            }
+            string result = template.Render(anonymousDataObject);
+            return result;
+        }
     }
 
     public interface IFileReadService
     {
         string FileAsString(string fileName, int inMemoryCachyExpireDays);
+        string FillContent(string content, object anonymousDataObject);
     }
 }

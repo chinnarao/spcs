@@ -50,3 +50,4 @@ C:\Users\chinn\OneDrive\Documents\GitHub\spcs\Microsoft.EntityFrameworkCore.Unit
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\Microsoft.EntityFrameworkCore.UnitOfWork\obj\Debug\netstandard1.6.1\Microsoft.EntityFrameworkCore.UnitOfWork.dll
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\Microsoft.EntityFrameworkCore.UnitOfWork\obj\Debug\netstandard1.6.1\Microsoft.EntityFrameworkCore.UnitOfWork.xml
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\Microsoft.EntityFrameworkCore.UnitOfWork\obj\Debug\netstandard1.6.1\Microsoft.EntityFrameworkCore.UnitOfWork.pdb
+C:\Users\chinn\OneDrive\Documents\GitHub\spcs\Microsoft.EntityFrameworkCore.UnitOfWork\obj\Debug\netstandard1.6.1\Microsoft.EntityFrameworkCore.UnitOfWork.csprojAssemblyReference.cache

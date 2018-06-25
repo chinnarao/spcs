@@ -15,3 +15,4 @@ C:\Users\chinn\OneDrive\Documents\GitHub\spcs\SP.StaticData\obj\Debug\netcoreapp
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\SP.StaticData\obj\Debug\netcoreapp2.1\SP.StaticData.AssemblyInfo.cs
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\SP.StaticData\obj\Debug\netcoreapp2.1\SP.StaticData.dll
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\SP.StaticData\obj\Debug\netcoreapp2.1\SP.StaticData.pdb
+C:\Users\chinn\OneDrive\Documents\GitHub\spcs\SP.StaticData\obj\Debug\netcoreapp2.1\SP.StaticData.csprojAssemblyReference.cache
