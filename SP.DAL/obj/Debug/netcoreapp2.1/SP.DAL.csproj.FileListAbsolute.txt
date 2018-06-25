@@ -19,3 +19,4 @@ C:\Users\chinn\OneDrive\Documents\GitHub\spcs\SP.DAL\obj\Debug\netcoreapp2.1\SP.
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\SP.DAL\obj\Debug\netcoreapp2.1\SP.DAL.AssemblyInfo.cs
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\SP.DAL\obj\Debug\netcoreapp2.1\SP.DAL.dll
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\SP.DAL\obj\Debug\netcoreapp2.1\SP.DAL.pdb
+C:\Users\chinn\OneDrive\Documents\GitHub\spcs\SP.DAL\obj\Debug\netcoreapp2.1\SP.DAL.csprojAssemblyReference.cache

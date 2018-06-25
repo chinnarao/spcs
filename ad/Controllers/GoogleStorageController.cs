@@ -6,11 +6,11 @@ namespace ad.Controllers
 {
     //https://github.com/aspnet/Docs/blob/master/aspnetcore/fundamentals/logging/index/sample2/Controllers/TodoController.cs
     [Route("api/[controller]"), Produces("application/json")]
-    public class StoreController : ControllerBase
+    public class GoogleStorageController : ControllerBase
     {
         private readonly ILogger _logger;
 
-        public StoreController(ILogger<StoreController> logger)
+        public GoogleStorageController(ILogger<GoogleStorageController> logger)
         {
             _logger = logger;
         }

@@ -21,3 +21,7 @@ C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad.xunittest\bin\Debug\netcoreapp2
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad.xunittest\bin\Debug\netcoreapp2.1\common.pdb
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad.xunittest\obj\Debug\netcoreapp2.1\ad.xunittest.csprojAssemblyReference.cache
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad.xunittest\obj\Debug\netcoreapp2.1\ad.xunittest.csproj.CopyComplete
+C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad.xunittest\bin\Debug\netcoreapp2.1\ad.services.htmltemplate.dll
+C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad.xunittest\bin\Debug\netcoreapp2.1\ad.services.htmltemplate.pdb
+C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad.xunittest\bin\Debug\netcoreapp2.1\appsettings.json
+C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad.xunittest\bin\Debug\netcoreapp2.1\ad.template.html

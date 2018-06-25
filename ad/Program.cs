@@ -19,6 +19,7 @@ namespace ad
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
+                .ConfigureLogging(builder => builder.AddFile()) // only one line for logging (NetEscapades.Extensions.Logging)
                 .UseStartup<Startup>();
     }
 }

@@ -2601,6 +2601,18 @@
           }
         }
       },
+      "NetEscapades.Extensions.Logging.RollingFile/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging": "2.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/NetEscapades.Extensions.Logging.RollingFile.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/NetEscapades.Extensions.Logging.RollingFile.dll": {}
+        }
+      },
       "NETStandard.Library/2.0.3": {
         "type": "package",
         "dependencies": {
@@ -2864,6 +2876,81 @@
             "assetType": "native",
             "rid": "win-x86"
           }
+        }
+      },
+      "Scriban/1.2.1": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "System.Security.Cryptography.Algorithms": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard1.3/Scriban.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/Scriban.dll": {}
+        }
+      },
+      "Swashbuckle.AspNetCore/2.5.0": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Swashbuckle.AspNetCore.Swagger": "2.5.0",
+          "Swashbuckle.AspNetCore.SwaggerGen": "2.5.0",
+          "Swashbuckle.AspNetCore.SwaggerUI": "2.5.0"
+        },
+        "compile": {
+          "lib/netstandard1.6/Swashbuckle.AspNetCore.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.6/Swashbuckle.AspNetCore.dll": {}
+        }
+      },
+      "Swashbuckle.AspNetCore.Swagger/2.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Mvc.Core": "1.0.4",
+          "Microsoft.AspNetCore.Mvc.Formatters.Json": "1.0.4",
+          "NETStandard.Library": "1.6.1"
+        },
+        "compile": {
+          "lib/netstandard1.6/Swashbuckle.AspNetCore.Swagger.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.6/Swashbuckle.AspNetCore.Swagger.dll": {}
+        }
+      },
+      "Swashbuckle.AspNetCore.SwaggerGen/2.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Mvc.ApiExplorer": "1.0.4",
+          "Microsoft.AspNetCore.Mvc.Core": "1.0.4",
+          "Microsoft.AspNetCore.Mvc.DataAnnotations": "1.0.4",
+          "NETStandard.Library": "1.6.1",
+          "Swashbuckle.AspNetCore.Swagger": "2.5.0",
+          "System.Xml.XPath": "4.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.6/Swashbuckle.AspNetCore.SwaggerGen.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.6/Swashbuckle.AspNetCore.SwaggerGen.dll": {}
+        }
+      },
+      "Swashbuckle.AspNetCore.SwaggerUI/2.5.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Routing": "1.0.4",
+          "Microsoft.AspNetCore.StaticFiles": "1.0.4",
+          "Microsoft.Extensions.FileProviders.Embedded": "1.0.1",
+          "NETStandard.Library": "1.6.1",
+          "Newtonsoft.Json": "9.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.6/Swashbuckle.AspNetCore.SwaggerUI.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.6/Swashbuckle.AspNetCore.SwaggerUI.dll": {}
         }
       },
       "System.AppContext/4.3.0": {
@@ -4308,7 +4395,7 @@
           "System.Xml.ReaderWriter": "4.3.0"
         },
         "compile": {
-          "ref/netstandard1.3/_._": {}
+          "ref/netstandard1.3/System.Xml.XPath.dll": {}
         },
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.dll": {}
@@ -4338,7 +4425,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
-          "ad.services.db": "1.0.0"
+          "ad.services.db": "1.0.0",
+          "ad.services.htmltemplate": "1.0.0"
         },
         "compile": {
           "bin/placeholder/ad.services.dll": {}
@@ -4359,6 +4447,22 @@
         },
         "runtime": {
           "bin/placeholder/ad.services.db.dll": {}
+        }
+      },
+      "ad.services.htmltemplate/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.1",
+        "dependencies": {
+          "Microsoft.Extensions.Caching.Memory": "2.1.0",
+          "Microsoft.Extensions.Configuration": "2.1.0",
+          "Scriban": "1.2.1",
+          "common": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ad.services.htmltemplate.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ad.services.htmltemplate.dll": {}
         }
       },
       "common/1.0.0": {
@@ -6803,6 +6907,17 @@
         "version.txt"
       ]
     },
+    "NetEscapades.Extensions.Logging.RollingFile/1.0.0": {
+      "sha512": "39HIu3foQVo7eq5hJiemmh2Z3isQTNomF0N4YWTnQn8NNWrcNRWBvHDzh1wPC8echMMnr9CiYb34xF5VnKp6Zg==",
+      "type": "package",
+      "path": "netescapades.extensions.logging.rollingfile/1.0.0",
+      "files": [
+        "lib/netstandard2.0/NetEscapades.Extensions.Logging.RollingFile.dll",
+        "lib/netstandard2.0/NetEscapades.Extensions.Logging.RollingFile.xml",
+        "netescapades.extensions.logging.rollingfile.1.0.0.nupkg.sha512",
+        "netescapades.extensions.logging.rollingfile.nuspec"
+      ]
+    },
     "NETStandard.Library/2.0.3": {
       "sha512": "st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
       "type": "package",
@@ -7235,6 +7350,78 @@
         "runtimes/win-x86/native/sni.dll",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "Scriban/1.2.1": {
+      "sha512": "G7AbOl+Yj+rq9j4Pw4YH/5yNncLAQCNBaKI2QvK0cKe8ozaAvhvbxy+uedJbh0ph1RkRAUgtAMASn8zLwHAJJA==",
+      "type": "package",
+      "path": "scriban/1.2.1",
+      "files": [
+        "lib/net35/Scriban.dll",
+        "lib/net35/Scriban.xml",
+        "lib/net40/Scriban.dll",
+        "lib/net40/Scriban.xml",
+        "lib/netstandard1.1/Scriban.dll",
+        "lib/netstandard1.1/Scriban.xml",
+        "lib/netstandard1.3/Scriban.dll",
+        "lib/netstandard1.3/Scriban.xml",
+        "lib/portable40-net40+sl5+win8+wp8+wpa81/Scriban.dll",
+        "lib/portable40-net40+sl5+win8+wp8+wpa81/Scriban.xml",
+        "lib/uap10.0/Scriban.dll",
+        "lib/uap10.0/Scriban.pri",
+        "lib/uap10.0/Scriban.xml",
+        "scriban.1.2.1.nupkg.sha512",
+        "scriban.nuspec"
+      ]
+    },
+    "Swashbuckle.AspNetCore/2.5.0": {
+      "sha512": "MDGQGeHQbQrEfto4hQt4CuolBz6szWLxpDXaQMV4xHV2bBnrYDcu25fF2rdqvnGiQlUbhw4pSXHOesUx+3/iow==",
+      "type": "package",
+      "path": "swashbuckle.aspnetcore/2.5.0",
+      "files": [
+        "lib/net451/Swashbuckle.AspNetCore.dll",
+        "lib/netstandard1.6/Swashbuckle.AspNetCore.dll",
+        "swashbuckle.aspnetcore.2.5.0.nupkg.sha512",
+        "swashbuckle.aspnetcore.nuspec"
+      ]
+    },
+    "Swashbuckle.AspNetCore.Swagger/2.5.0": {
+      "sha512": "u7QeHMOlxP6aqTwdlDantmChT7zzg90WI3m4Cy8oRVgPKss3uZBjvweDMIHxkMUsvt6Bt6EyiWBWyndYEEyyzA==",
+      "type": "package",
+      "path": "swashbuckle.aspnetcore.swagger/2.5.0",
+      "files": [
+        "lib/net451/Swashbuckle.AspNetCore.Swagger.dll",
+        "lib/net451/Swashbuckle.AspNetCore.Swagger.xml",
+        "lib/netstandard1.6/Swashbuckle.AspNetCore.Swagger.dll",
+        "lib/netstandard1.6/Swashbuckle.AspNetCore.Swagger.xml",
+        "swashbuckle.aspnetcore.swagger.2.5.0.nupkg.sha512",
+        "swashbuckle.aspnetcore.swagger.nuspec"
+      ]
+    },
+    "Swashbuckle.AspNetCore.SwaggerGen/2.5.0": {
+      "sha512": "Ox81z9CNerBFOFPW3spwQExoz/Lc3DoKfaJgvlC4oFJExelQ8skfgvAA1tURu9Ltbihg+BPDJS9ANfi6NAmWkw==",
+      "type": "package",
+      "path": "swashbuckle.aspnetcore.swaggergen/2.5.0",
+      "files": [
+        "lib/net451/Swashbuckle.AspNetCore.SwaggerGen.dll",
+        "lib/net451/Swashbuckle.AspNetCore.SwaggerGen.xml",
+        "lib/netstandard1.6/Swashbuckle.AspNetCore.SwaggerGen.dll",
+        "lib/netstandard1.6/Swashbuckle.AspNetCore.SwaggerGen.xml",
+        "swashbuckle.aspnetcore.swaggergen.2.5.0.nupkg.sha512",
+        "swashbuckle.aspnetcore.swaggergen.nuspec"
+      ]
+    },
+    "Swashbuckle.AspNetCore.SwaggerUI/2.5.0": {
+      "sha512": "Vl/b/evziaRvdgA2VYf58PLdQnZyEhtSE1cBikwgORXexnAjeSHGb9ksgQLd8ZvTUD7hTYjnbXQHuKCYe2S3zA==",
+      "type": "package",
+      "path": "swashbuckle.aspnetcore.swaggerui/2.5.0",
+      "files": [
+        "lib/net451/Swashbuckle.AspNetCore.SwaggerUI.dll",
+        "lib/net451/Swashbuckle.AspNetCore.SwaggerUI.xml",
+        "lib/netstandard1.6/Swashbuckle.AspNetCore.SwaggerUI.dll",
+        "lib/netstandard1.6/Swashbuckle.AspNetCore.SwaggerUI.xml",
+        "swashbuckle.aspnetcore.swaggerui.2.5.0.nupkg.sha512",
+        "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
     },
     "System.AppContext/4.3.0": {
@@ -11545,6 +11732,11 @@
       "path": "../ad.services.db/ad.services.db.csproj",
       "msbuildProject": "../ad.services.db/ad.services.db.csproj"
     },
+    "ad.services.htmltemplate/1.0.0": {
+      "type": "project",
+      "path": "../ad.services.htmltemplate/ad.services.htmltemplate.csproj",
+      "msbuildProject": "../ad.services.htmltemplate/ad.services.htmltemplate.csproj"
+    },
     "common/1.0.0": {
       "type": "project",
       "path": "../common/common.csproj",
@@ -11555,6 +11747,8 @@
     ".NETCoreApp,Version=v2.1": [
       "Microsoft.AspNetCore.App >= 2.1.0",
       "Microsoft.NETCore.App >= 2.1.0",
+      "NetEscapades.Extensions.Logging.RollingFile >= 1.0.0",
+      "Swashbuckle.AspNetCore >= 2.5.0",
       "ad.services >= 1.0.0",
       "common >= 1.0.0"
     ]
@@ -11617,6 +11811,14 @@
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true
+          },
+          "NetEscapades.Extensions.Logging.RollingFile": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          },
+          "Swashbuckle.AspNetCore": {
+            "target": "Package",
+            "version": "[2.5.0, )"
           }
         },
         "imports": [

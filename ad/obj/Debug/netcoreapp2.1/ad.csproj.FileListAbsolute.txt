@@ -26,10 +26,12 @@ C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad\bin\Debug\netcoreapp2.1\ad.dll
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad\bin\Debug\netcoreapp2.1\ad.pdb
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad\bin\Debug\netcoreapp2.1\ad.services.db.dll
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad\bin\Debug\netcoreapp2.1\ad.services.dll
+C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad\bin\Debug\netcoreapp2.1\ad.services.htmltemplate.dll
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad\bin\Debug\netcoreapp2.1\common.dll
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad\bin\Debug\netcoreapp2.1\ad.services.pdb
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad\bin\Debug\netcoreapp2.1\common.pdb
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad\bin\Debug\netcoreapp2.1\ad.services.db.pdb
+C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad\bin\Debug\netcoreapp2.1\ad.services.htmltemplate.pdb
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad\obj\Debug\netcoreapp2.1\ad.csprojAssemblyReference.cache
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad\obj\Debug\netcoreapp2.1\ad.csproj.CoreCompileInputs.cache
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad\obj\Debug\netcoreapp2.1\ad.RazorAssemblyInfo.cache
@@ -40,3 +42,4 @@ C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad\obj\Debug\netcoreapp2.1\ad.Razo
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad\obj\Debug\netcoreapp2.1\ad.csproj.CopyComplete
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad\obj\Debug\netcoreapp2.1\ad.dll
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad\obj\Debug\netcoreapp2.1\ad.pdb
+C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad\bin\Debug\netcoreapp2.1\ad.template.html

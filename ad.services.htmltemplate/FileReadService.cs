@@ -10,26 +10,38 @@ namespace ad.services.htmltemplate
 {
     public class FileReadService : IFileReadService
     {
-        private readonly IConfiguration _config;
         private readonly IMemoryCache _memoryCache;
-        public FileReadService(IConfiguration configuration, IMemoryCache memoryCache)
+        public FileReadService(IMemoryCache memoryCache)
         {
-            _config = configuration;
             _memoryCache = memoryCache;
         }
 
-        public string FileAsString(string path)
+        /// <summary>
+        /// file shoud be build to copy always in file properties
+        /// </summary>
+        /// <param name="fileName">ad.template.html</param>
+        /// <param name="inMemoryCachyExpireDays"></param>
+        /// <returns></returns>
+        public string FileAsString(string fileName, int inMemoryCachyExpireDays)
         {
+            if (inMemoryCachyExpireDays <= 0)
+            {
+                throw new ArgumentOutOfRangeException(nameof(inMemoryCachyExpireDays));
+            }
+            if (string.IsNullOrWhiteSpace(fileName))
+            {
+                throw new ArgumentOutOfRangeException(nameof(fileName));
+            }
             string _htmlFileContent = string.Empty;
             if (!_memoryCache.TryGetValue(Constants.AD_HTML_FILE_TEMPLATE, out _htmlFileContent))
             {
-                using (StreamReader sr = new StreamReader(path))
+                using (StreamReader sr = new StreamReader(fileName))
                 {
                     _htmlFileContent = sr.ReadToEnd();
                 }
                 var opts = new MemoryCacheEntryOptions
                 {
-                    SlidingExpiration = TimeSpan.FromDays(Convert.ToInt32(_config["InMemoryCacheDays"]))
+                    SlidingExpiration = TimeSpan.FromDays(inMemoryCachyExpireDays)
                 };
                 _memoryCache.Set(Constants.AD_HTML_FILE_TEMPLATE, _htmlFileContent, opts);
             }
@@ -43,6 +55,6 @@ namespace ad.services.htmltemplate
 
     public interface IFileReadService
     {
-        string FileAsString(string path);
+        string FileAsString(string fileName, int inMemoryCachyExpireDays);
     }
 }

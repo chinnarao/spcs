@@ -26,3 +26,5 @@ C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad.services\obj\Debug\netcoreapp2.
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad.services\obj\Debug\netcoreapp2.1\ad.services.csproj.CopyComplete
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad.services\obj\Debug\netcoreapp2.1\ad.services.dll
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad.services\obj\Debug\netcoreapp2.1\ad.services.pdb
+C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad.services\bin\Debug\netcoreapp2.1\ad.services.htmltemplate.dll
+C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad.services\bin\Debug\netcoreapp2.1\ad.services.htmltemplate.pdb

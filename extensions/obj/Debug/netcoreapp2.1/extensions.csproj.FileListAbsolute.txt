@@ -14,4 +14,3 @@ C:\Users\chinn\OneDrive\Documents\GitHub\spcs\extensions\obj\Debug\netcoreapp2.1
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\extensions\obj\Debug\netcoreapp2.1\extensions.AssemblyInfo.cs
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\extensions\obj\Debug\netcoreapp2.1\extensions.dll
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\extensions\obj\Debug\netcoreapp2.1\extensions.pdb
-C:\Users\chinn\OneDrive\Documents\GitHub\spcs\extensions\obj\Debug\netcoreapp2.1\extensions.csprojAssemblyReference.cache

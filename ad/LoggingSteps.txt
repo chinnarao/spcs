@@ -1,0 +1,19 @@
+﻿==================================logging step by step========================================
+step1: nuget: install : NetEscapades.Extensions.Logging.RollingFile  (2.5.0 v)
+step2: program.cs : include below one line, that's it.
+.ConfigureLogging(builder => builder.AddFile())
+
+see below for more info:
+public class Program
+    {
+        public static void Main(string[] args)
+        {
+            CreateWebHostBuilder(args).Build().Run();
+        }
+
+        public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
+            WebHost.CreateDefaultBuilder(args)
+                .ConfigureLogging(builder => builder.AddFile()) // only one line for logging (NetEscapades.Extensions.Logging)
+                .UseStartup<Startup>();
+    }
+==============================================================================================

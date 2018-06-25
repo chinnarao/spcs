@@ -1,0 +1,28 @@
+2018-06-25 00:35:48.233 -07:00 [Information] Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager: User profile is available. Using 'C:\Users\chinn\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-06-25 00:35:48.914 -07:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:44309/api/values  
+2018-06-25 00:35:48.916 -07:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 DEBUG http://localhost:60325/  0
+2018-06-25 00:35:48.943 -07:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 28.4674ms 200 
+2018-06-25 00:35:49.108 -07:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "Get", controller = "Values"}. Executing action ad.Controllers.ValuesController.Get (ad)
+2018-06-25 00:35:49.117 -07:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method ad.Controllers.ValuesController.Get (ad) - Validation state: Valid
+2018-06-25 00:35:49.121 -07:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action method ad.Controllers.ValuesController.Get (ad), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.4879ms.
+2018-06-25 00:35:49.130 -07:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor: Executing ObjectResult, writing value of type 'System.String[]'.
+2018-06-25 00:35:49.139 -07:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action ad.Controllers.ValuesController.Get (ad) in 27.7326ms
+2018-06-25 00:35:49.145 -07:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 231.7727ms 200 application/json; charset=utf-8
+2018-06-25 00:45:03.866 -07:00 [Information] Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager: User profile is available. Using 'C:\Users\chinn\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-06-25 00:45:04.303 -07:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:44309/api/values  
+2018-06-25 00:45:04.410 -07:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "Get", controller = "Values"}. Executing action ad.Controllers.ValuesController.Get (ad)
+2018-06-25 00:45:04.416 -07:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method ad.Controllers.ValuesController.Get (ad) - Validation state: Valid
+2018-06-25 00:45:04.418 -07:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action method ad.Controllers.ValuesController.Get (ad), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.1972ms.
+2018-06-25 00:45:04.424 -07:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor: Executing ObjectResult, writing value of type 'System.String[]'.
+2018-06-25 00:45:04.432 -07:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action ad.Controllers.ValuesController.Get (ad) in 20.7345ms
+2018-06-25 00:45:04.437 -07:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 133.9347ms 200 application/json; charset=utf-8
+2018-06-25 01:12:59.700 -07:00 [Information] Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager: User profile is available. Using 'C:\Users\chinn\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2018-06-25 01:13:00.391 -07:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 DEBUG http://localhost:60325/  0
+2018-06-25 01:13:00.393 -07:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request starting HTTP/1.1 GET http://localhost:44309/api/values  
+2018-06-25 01:13:00.421 -07:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 29.3506ms 200 
+2018-06-25 01:13:00.576 -07:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Route matched with {action = "Get", controller = "Values"}. Executing action ad.Controllers.ValuesController.Get (ad)
+2018-06-25 01:13:00.584 -07:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executing action method ad.Controllers.ValuesController.Get (ad) - Validation state: Valid
+2018-06-25 01:13:00.589 -07:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action method ad.Controllers.ValuesController.Get (ad), returned result Microsoft.AspNetCore.Mvc.ObjectResult in 0.5039ms.
+2018-06-25 01:13:00.598 -07:00 [Information] Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor: Executing ObjectResult, writing value of type 'System.String[]'.
+2018-06-25 01:13:00.607 -07:00 [Information] Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker: Executed action ad.Controllers.ValuesController.Get (ad) in 27.0948ms
+2018-06-25 01:13:00.616 -07:00 [Information] Microsoft.AspNetCore.Hosting.Internal.WebHost: Request finished in 224.9985ms 200 application/json; charset=utf-8
