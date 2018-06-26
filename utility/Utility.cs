@@ -29,7 +29,7 @@ namespace utility
             }
         }
 
-        public Dictionary<string, string> GetMimeTypes()
+        public static Dictionary<string, string> GetMimeTypes()
         {
             return new Dictionary<string, string>
             {
@@ -45,7 +45,9 @@ namespace utility
                 {".gif",  "image/gif"},
                 {".csv",  "text/csv"},
                 { ".zip", "application/x-rar-compressed"},
-                { ".json", "application/x-rar-compressed"}
+                { ".json", " application/json"},
+                { ".htm", "text/html"},
+                { ".html", "text/html"}
             };
         }
     }

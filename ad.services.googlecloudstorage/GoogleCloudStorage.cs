@@ -1,22 +1,74 @@
 ﻿using Google.Cloud.Storage.V1;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace ad.services.googlecloudstorage
 {
     public class GoogleCloudStorage
     {
-        public void UploadFile(string bucketName, string localPath,
-            string objectName = null)
+        public void UploadObject(string bucketName, Stream stream, string objectName)
         {
+            if (string.IsNullOrEmpty(bucketName))
+            {
+                throw new ArgumentException(nameof(bucketName));
+            }
+            if (stream == null || stream.Length <= 0)
+            {
+                throw new ArgumentException(nameof(stream));
+            }
+            if (string.IsNullOrEmpty(objectName))
+            {
+                throw new ArgumentException(nameof(objectName));
+            }
+            string fileExtenstion = Path.GetExtension(objectName);
+            if (string.IsNullOrEmpty(fileExtenstion))
+            {
+                throw new ArgumentException(nameof(fileExtenstion));
+            }
+            string contentType = utility.utility.GetMimeTypes()[fileExtenstion.ToLower()];
+            if (string.IsNullOrEmpty(contentType))
+            {
+                throw new ArgumentException(nameof(contentType));
+            }
             var storage = StorageClient.Create();
-            //using (var f = File.OpenRead(localPath))
-            //{
-            //    objectName = objectName ?? Path.GetFileName(localPath);
-            //    storage.UploadObject(bucketName, objectName, null, f);
-            //    Console.WriteLine($"Uploaded {objectName}.");
-            //}
+            storage.UploadObject(bucketName, objectName, contentType, stream);
         }
+
+        public async Task UploadObjectAsync(string bucketName, Stream stream, string objectName)
+        {
+            if (string.IsNullOrEmpty(bucketName))
+            {
+                throw new ArgumentException(nameof(bucketName));
+            }
+            if (stream == null || stream.Length <= 0)
+            {
+                throw new ArgumentException(nameof(stream));
+            }
+            if (string.IsNullOrEmpty(objectName))
+            {
+                throw new ArgumentException(nameof(objectName));
+            }
+            string fileExtenstion = Path.GetExtension(objectName);
+            if (string.IsNullOrEmpty(fileExtenstion))
+            {
+                throw new ArgumentException(nameof(fileExtenstion));
+            }
+            string contentType = utility.utility.GetMimeTypes()[fileExtenstion.ToLower()];
+            if (string.IsNullOrEmpty(contentType))
+            {
+                throw new ArgumentException(nameof(contentType));
+            }
+            var storage = StorageClient.Create();
+            await storage.UploadObjectAsync(bucketName, objectName, contentType, stream);
+        }
+    }
+
+    public interface IGoogleCloudStorage
+    {
+        void UploadObject(string bucketName, Stream stream, string objectName);
+        Task UploadObjectAsync(string bucketName, Stream stream, string objectName);
     }
 }

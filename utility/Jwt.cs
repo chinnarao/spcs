@@ -1,7 +1,7 @@
 ﻿using Microsoft.IdentityModel.Tokens;
 using System.Security.Cryptography;
 
-namespace Utility
+namespace utility
 {
     public class Jwt
     {

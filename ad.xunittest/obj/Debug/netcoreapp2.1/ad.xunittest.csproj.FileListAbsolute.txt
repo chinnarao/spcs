@@ -25,3 +25,7 @@ C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad.xunittest\bin\Debug\netcoreapp2
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad.xunittest\bin\Debug\netcoreapp2.1\ad.services.htmltemplate.pdb
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad.xunittest\bin\Debug\netcoreapp2.1\appsettings.json
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad.xunittest\bin\Debug\netcoreapp2.1\ad.template.html
+C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad.xunittest\bin\Debug\netcoreapp2.1\ad.services.googlecloudstorage.dll
+C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad.xunittest\bin\Debug\netcoreapp2.1\utility.dll
+C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad.xunittest\bin\Debug\netcoreapp2.1\ad.services.googlecloudstorage.pdb
+C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad.xunittest\bin\Debug\netcoreapp2.1\utility.pdb

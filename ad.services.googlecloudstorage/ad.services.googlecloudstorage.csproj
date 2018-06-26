@@ -8,4 +8,8 @@
     <PackageReference Include="Google.Cloud.Storage.V1" Version="2.2.0-beta01" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\utility\utility.csproj" />
+  </ItemGroup>
+
 </Project>

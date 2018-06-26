@@ -2,6 +2,7 @@
 using System;
 using System.IO;
 using common.constants;
+using System.Text;
 
 namespace ad.services.htmltemplate
 {
@@ -11,6 +12,12 @@ namespace ad.services.htmltemplate
         public FileReadService(IMemoryCache memoryCache)
         {
             _memoryCache = memoryCache;
+        }
+
+        public Stream FileAsStream(string content)
+        {
+            MemoryStream memoryStream = new MemoryStream(Encoding.UTF8.GetBytes(content));
+            return memoryStream;
         }
 
         /// <summary>
@@ -65,5 +72,6 @@ namespace ad.services.htmltemplate
     {
         string FileAsString(string fileName, int inMemoryCachyExpireDays);
         string FillContent(string content, object anonymousDataObject);
+        Stream FileAsStream(string content);
     }
 }

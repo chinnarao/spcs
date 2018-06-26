@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ad.services.db\ad.services.db.csproj" />
+    <ProjectReference Include="..\ad.services.googlecloudstorage\ad.services.googlecloudstorage.csproj" />
     <ProjectReference Include="..\ad.services.htmltemplate\ad.services.htmltemplate.csproj" />
   </ItemGroup>
 

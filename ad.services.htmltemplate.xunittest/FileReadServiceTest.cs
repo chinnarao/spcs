@@ -1,10 +1,8 @@
 using Microsoft.Extensions.Caching.Memory;
-using Microsoft.Extensions.Configuration;
 using System;
 using Xunit;
 using FluentAssertions;
-using System.Collections.Generic;
-using System.Linq;
+using System.IO;
 
 namespace ad.services.htmltemplate.xunittest
 {
@@ -38,6 +36,20 @@ namespace ad.services.htmltemplate.xunittest
             act.Should().NotThrow();
             Action act1 = () => content.Should().Contain(anonymousData.Occupation);
             act1.Should().NotThrow();
+        }
+
+        [Fact]
+        public void Test_FileAsStream()
+        {
+            var anonymousData = new
+            {
+                Name = "Riya",
+                Occupation = "Kavin Brother."
+            };
+            string content = new FileReadService(Helper.GetDefaultMemoryCacheObject()).FillContent(Helper.GetAdTemplateFileContent(), anonymousData);
+            Stream stream = new FileReadService(Helper.GetDefaultMemoryCacheObject()).FileAsStream(content);
+            Action act = () => stream.Should().NotBeNull();
+            act.Should().NotThrow();
         }
     }
 }
