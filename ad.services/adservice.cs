@@ -52,6 +52,14 @@ namespace ad.services
         {
             await _googleCloudStorage.UploadObjectAsync(bucketName, stream, objectName);
         }
+
+        public void UploadObjectInGoogleCloudStorage(string fileName, int inMemoryCachyExpireDays, string objectName, object anonymousDataObject,  string bucketName)
+        {
+            string content = this.GetAdHtmlFileTemplateContent(fileName, inMemoryCachyExpireDays);
+            content = this.SetAdHtmlFileTemplateContent(content, anonymousDataObject);
+            Stream stream = this.GetAdHtmlFileTemplateStream(fileName, inMemoryCachyExpireDays, anonymousDataObject);
+            this.UploadObjectInGoogleCloudStorage(bucketName, stream, objectName);
+        }
     }
 
     public interface IAdService
@@ -60,6 +68,7 @@ namespace ad.services
         string SetAdHtmlFileTemplateContent(string content, object anonymousDataObject);
         Stream GetAdHtmlFileTemplateStream(string fileName, int inMemoryCachyExpireDays, object anonymousDataObject);
         void UploadObjectInGoogleCloudStorage(string bucketName, Stream stream, string objectName);
+        void UploadObjectInGoogleCloudStorage(string fileName, int inMemoryCachyExpireDays, string objectName, object anonymousDataObject, string bucketName);
         Task UploadObjectInGoogleCloudStorageAsync(string bucketName, Stream stream, string objectName);
         //IEnumerable<TEntity> GetAll<TEntity>() where TEntity : AdVM, new();
     }

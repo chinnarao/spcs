@@ -23,11 +23,18 @@ namespace ad.Controllers
         }
 
         [HttpGet]
-        public IActionResult PostAd()
+        public IActionResult PostAd(object data, string objectName)
         {
-            int cacheDays = Convert.ToInt32(_configuration["InMemoryCacheDays"]);
+            int cacheExpiryDays = Convert.ToInt32(_configuration["InMemoryCacheDays"]);
             string fileName = _configuration["AdHtmlTemplateFileName"];
-            string fileContent = _adService.GetAdHtmlFileTemplateContent(fileName, cacheDays);
+            objectName = objectName ?? "abc.html";
+            string bucketName = "";
+            var anonymousDataObject = new
+            {
+                Name = "Riya",
+                Occupation = "Kavin's sister."
+            };
+            _adService.UploadObjectInGoogleCloudStorage(fileName, cacheExpiryDays, objectName, anonymousDataObject, bucketName);
             return Ok(new { Name = "Chinna", Email = "chinnarao@live.com" });
         }
 
