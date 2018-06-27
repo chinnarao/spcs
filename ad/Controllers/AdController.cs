@@ -25,24 +25,19 @@ namespace ad.Controllers
         }
 
         [HttpPost]
-        public IActionResult PostAd([FromBody]Method_PostAd data, string objectName)
+        public IActionResult PostAd([FromBody]Method_PostAd data)
         {
-            var anonymousDataObject = data.ConvertToAnonymousType(data);
+            if (string.IsNullOrWhiteSpace(data.Name)) return BadRequest("Invalid input :" + nameof(data.Name));
+            if (string.IsNullOrWhiteSpace(data.Occupation)) return BadRequest("Invalid input :" + nameof(data.Occupation));
 
             int cacheExpiryDays = Convert.ToInt32(_configuration["InMemoryCacheDays"]);
             string fileName = _configuration["AdHtmlTemplateFileName"];
-            objectName = objectName ?? "abc.html";
             string bucketName = _configuration["AdBucketNameInGoogleCloudStorage"];
-            //var anonymousDataObject = new
-            //{
-            //    Name = data.Name,
-            //    Occupation = data.Occupation
-            //};
-            //#region MyRegion
-            //if (string.IsNullOrWhiteSpace(anonymousDataObject.Name)) throw new ArgumentNullException(nameof(anonymousDataObject.Name));
-            //#endregion
+            Guid objectName = Guid.NewGuid();
 
+            var anonymousDataObject = data.ConvertToAnonymousType(data);
             _adService.UploadObjectInGoogleCloudStorage(fileName, cacheExpiryDays, objectName, bucketName, anonymousDataObject);
+
             return Ok(new { Name = "Chinna", Email = "chinnarao@live.com" });
         }
 
