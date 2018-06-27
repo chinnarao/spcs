@@ -15,6 +15,7 @@ using ad.services;
 using ad.services.db;
 using Swashbuckle.AspNetCore.Swagger;
 using ad.services.htmltemplate;
+using ad.services.googlecloudstorage;
 //https://github.com/dotnet-architecture/eShopOnWeb
 //https://github.com/aspnet/Docs/blob/master/aspnetcore/test/integration-tests/samples/2.x/IntegrationTestsSample/src/RazorPagesProject/Startup.cs
 //https://github.com/dotnet-presentations/home/tree/master/ASP.NET%20Core/ASP.NET%20Core%20-%20What-s%20New
@@ -37,7 +38,7 @@ namespace ad
 
             services.AddTransient<IAdService, AdService>();
             services.AddTransient<IFileReadService, FileReadService>();
-
+            services.AddTransient<IGoogleCloudStorage, GoogleCloudStorage>();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             #region Swagger
             // Register the Swagger generator, defining 1 or more Swagger documents

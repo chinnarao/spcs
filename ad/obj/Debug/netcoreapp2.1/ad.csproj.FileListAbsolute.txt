@@ -47,3 +47,5 @@ C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad\bin\Debug\netcoreapp2.1\ad.serv
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad\bin\Debug\netcoreapp2.1\utility.dll
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad\bin\Debug\netcoreapp2.1\ad.services.googlecloudstorage.pdb
 C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad\bin\Debug\netcoreapp2.1\utility.pdb
+C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad\bin\Debug\netcoreapp2.1\extensions.dll
+C:\Users\chinn\OneDrive\Documents\GitHub\spcs\ad\bin\Debug\netcoreapp2.1\extensions.pdb

@@ -17,6 +17,8 @@
   <ItemGroup>
     <ProjectReference Include="..\ad.services\ad.services.csproj" />
     <ProjectReference Include="..\common\common.csproj" />
+    <ProjectReference Include="..\extensions\extensions.csproj" />
+    <ProjectReference Include="..\utility\utility.csproj" />
   </ItemGroup>
 
   <ItemGroup>

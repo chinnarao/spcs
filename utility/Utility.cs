@@ -3,11 +3,6 @@ using System.Collections.Generic;
 
 namespace utility
 {
-    public enum TerritoryTypeEnum
-    {
-        Country = 1, State = 2, CountyOrProvince = 3, Community = 4, Place = 5
-    }
-
     public class utility
     {
         public static string GetCacheCode(int index, string CountryCode, string Code, string Name)
@@ -50,5 +45,22 @@ namespace utility
                 { ".html", "text/html"}
             };
         }
+
+        /// <summary>
+        /// Casting from parameter to parameter  {  var first = new { Id = 1, Name = "Bob" }; var second = new { Id = 0, Name = "" }; second = utility.utility.Cast(second, first); }
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="to">future upcoming anonymous object, could be empty</param>
+        /// <param name="from">original with data</param>
+        /// <returns>anonymous to type object</returns>
+        public static T Cast<T>(T to, T from)
+        {
+            return (T)from;
+        }
+    }
+
+    public enum TerritoryTypeEnum
+    {
+        Country = 1, State = 2, CountyOrProvince = 3, Community = 4, Place = 5
     }
 }

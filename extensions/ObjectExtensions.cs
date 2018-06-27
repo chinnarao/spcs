@@ -9,6 +9,7 @@ namespace extensions
     {
         /// <summary>
         /// object obj=getSomeObjectOfAnonymoustype(); Client client = obj.ToType(typeof(Client));
+        /// failed in testing : Method_PostAd m = new Method_PostAd() { Name = "x", Occupation = "s" }; var first = new { Name = "f", Occupation = "h" };  var r = first.ToType(m);
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="obj"></param>
@@ -69,6 +70,13 @@ namespace extensions
         public static object GetPropValue(object src, string propName)
         {
             return src.GetType().GetProperty(propName).GetValue(src, null);
+        }
+
+        public static T CastTo<T>(this Object value, T targetType)
+        {
+            // targetType above is just for compiler magic
+            // to infer the type to cast x to
+            return (T)value;
         }
     }
 }

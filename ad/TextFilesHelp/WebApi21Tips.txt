@@ -1,0 +1,7 @@
+﻿Post Method:------
+"Content-Type: application/json-patch+json" [in swagger] , success
+[HttpPost] public IActionResult PostAd([FromBody]dynamic data, string objectName){}
+success from swagger: { "Name":"83","Occupation":"xxxx"}
+success from swagger: { Name:77,Occupation:"student"}  success , but in api would look like this { "Name":77,Occupation:"student"}
+failed from swagger: null if i pass from swagger : { Name = "Riya", Occupation = "Kavin's sister."}
+===================================================================================================================================
