@@ -35,7 +35,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ad.xunittest", "ad.xunittes
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ad.services.htmltemplate.xunittest", "ad.services.htmltemplate.xunittest\ad.services.htmltemplate.xunittest.csproj", "{310255A2-30E4-47B6-841D-0520EA57BFF2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ad.services.googlecloudstorage.xunittest", "ad.services.googlecloudstorage.xunittest\ad.services.googlecloudstorage.xunittest.csproj", "{2B3AEB81-C20D-401E-8650-EA496A0072DD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ad.services.googlecloudstorage.xunittest", "ad.services.googlecloudstorage.xunittest\ad.services.googlecloudstorage.xunittest.csproj", "{2B3AEB81-C20D-401E-8650-EA496A0072DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "article", "article\article.csproj", "{F990FEAF-972E-4C20-A3E5-789796F1936B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -111,6 +113,10 @@ Global
 		{2B3AEB81-C20D-401E-8650-EA496A0072DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B3AEB81-C20D-401E-8650-EA496A0072DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B3AEB81-C20D-401E-8650-EA496A0072DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F990FEAF-972E-4C20-A3E5-789796F1936B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F990FEAF-972E-4C20-A3E5-789796F1936B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F990FEAF-972E-4C20-A3E5-789796F1936B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F990FEAF-972E-4C20-A3E5-789796F1936B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

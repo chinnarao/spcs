@@ -1,0 +1,14 @@
+C:\Users\chinn\OneDrive\Documents\GitHub\spcs\article\bin\Debug\netcoreapp2.1\article.deps.json
+C:\Users\chinn\OneDrive\Documents\GitHub\spcs\article\bin\Debug\netcoreapp2.1\article.runtimeconfig.json
+C:\Users\chinn\OneDrive\Documents\GitHub\spcs\article\bin\Debug\netcoreapp2.1\article.runtimeconfig.dev.json
+C:\Users\chinn\OneDrive\Documents\GitHub\spcs\article\bin\Debug\netcoreapp2.1\article.dll
+C:\Users\chinn\OneDrive\Documents\GitHub\spcs\article\bin\Debug\netcoreapp2.1\article.pdb
+C:\Users\chinn\OneDrive\Documents\GitHub\spcs\article\obj\Debug\netcoreapp2.1\article.csprojAssemblyReference.cache
+C:\Users\chinn\OneDrive\Documents\GitHub\spcs\article\obj\Debug\netcoreapp2.1\article.csproj.CoreCompileInputs.cache
+C:\Users\chinn\OneDrive\Documents\GitHub\spcs\article\obj\Debug\netcoreapp2.1\article.RazorAssemblyInfo.cache
+C:\Users\chinn\OneDrive\Documents\GitHub\spcs\article\obj\Debug\netcoreapp2.1\article.RazorAssemblyInfo.cs
+C:\Users\chinn\OneDrive\Documents\GitHub\spcs\article\obj\Debug\netcoreapp2.1\article.AssemblyInfoInputs.cache
+C:\Users\chinn\OneDrive\Documents\GitHub\spcs\article\obj\Debug\netcoreapp2.1\article.AssemblyInfo.cs
+C:\Users\chinn\OneDrive\Documents\GitHub\spcs\article\obj\Debug\netcoreapp2.1\article.RazorTargetAssemblyInfo.cache
+C:\Users\chinn\OneDrive\Documents\GitHub\spcs\article\obj\Debug\netcoreapp2.1\article.dll
+C:\Users\chinn\OneDrive\Documents\GitHub\spcs\article\obj\Debug\netcoreapp2.1\article.pdb
